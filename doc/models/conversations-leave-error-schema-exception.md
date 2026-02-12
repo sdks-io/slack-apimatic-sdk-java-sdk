@@ -14,7 +14,7 @@ Schema for error response from conversations.leave method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error39`](../../doc/models/error-39.md) | Required | - | Error39 getError() | setError(Error39 error) |
+| `Error` | [`ConversationsLeaveErrorEnum`](../../doc/models/conversations-leave-error-enum.md) | Required | - | ConversationsLeaveErrorEnum getError() | setError(ConversationsLeaveErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

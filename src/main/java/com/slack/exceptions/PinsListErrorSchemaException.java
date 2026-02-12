@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error63;
+import com.slack.models.PinsListErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for PinsListErrorSchemaException type.
  */
 public class PinsListErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 3955224206810946804L;
+    private static final long serialVersionUID = -3955262639693479488L;
     private String callstack;
-    private Error63 error;
+    private PinsListErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class PinsListErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error63
+     * @return Returns the PinsListErrorEnum
      */
     @JsonGetter("error")
-    public Error63 getError() {
+    public PinsListErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error63
+     * @param error Value for PinsListErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error63 error) {
+    private void setError(PinsListErrorEnum error) {
         this.error = error;
     }
 

@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.rename
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error8`](../../doc/models/error-8.md) | Required | - | Error8 getError() | setError(Error8 error) |
+| `Error` | [`AdminConversationsRenameErrorEnum`](../../doc/models/admin-conversations-rename-error-enum.md) | Required | - | AdminConversationsRenameErrorEnum getError() | setError(AdminConversationsRenameErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

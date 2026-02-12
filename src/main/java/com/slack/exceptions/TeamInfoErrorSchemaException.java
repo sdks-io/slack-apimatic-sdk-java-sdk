@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error74;
+import com.slack.models.RtmConnectErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for TeamInfoErrorSchemaException type.
  */
 public class TeamInfoErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -7113174372530297393L;
+    private static final long serialVersionUID = 7113026222752718422L;
     private String callstack;
-    private Error74 error;
+    private RtmConnectErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class TeamInfoErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error74
+     * @return Returns the RtmConnectErrorEnum
      */
     @JsonGetter("error")
-    public Error74 getError() {
+    public RtmConnectErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error74
+     * @param error Value for RtmConnectErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error74 error) {
+    private void setError(RtmConnectErrorEnum error) {
         this.error = error;
     }
 

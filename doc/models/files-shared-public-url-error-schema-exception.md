@@ -14,7 +14,7 @@ Schema for error response from files.sharedPublicURL method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error59`](../../doc/models/error-59.md) | Required | - | Error59 getError() | setError(Error59 error) |
+| `Error` | [`FilesSharedPublicUrlErrorEnum`](../../doc/models/files-shared-public-url-error-enum.md) | Required | - | FilesSharedPublicUrlErrorEnum getError() | setError(FilesSharedPublicUrlErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

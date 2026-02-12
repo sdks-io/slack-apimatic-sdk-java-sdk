@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error81;
+import com.slack.models.TeamProfileGetErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for TeamProfileGetErrorSchemaException type.
  */
 public class TeamProfileGetErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 7647538536739676028L;
+    private static final long serialVersionUID = -7647504852211928470L;
     private String callstack;
-    private Error81 error;
+    private TeamProfileGetErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class TeamProfileGetErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error81
+     * @return Returns the TeamProfileGetErrorEnum
      */
     @JsonGetter("error")
-    public Error81 getError() {
+    public TeamProfileGetErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error81
+     * @param error Value for TeamProfileGetErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error81 error) {
+    private void setError(TeamProfileGetErrorEnum error) {
         this.error = error;
     }
 

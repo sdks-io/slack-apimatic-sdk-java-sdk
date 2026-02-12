@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error58;
+import com.slack.models.FilesRevokePublicUrlErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for FilesRevokePublicUrlErrorSchemaException type.
  */
 public class FilesRevokePublicUrlErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 5743171873682370969L;
+    private static final long serialVersionUID = 5743371278854132546L;
     private String callstack;
-    private Error58 error;
+    private FilesRevokePublicUrlErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class FilesRevokePublicUrlErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error58
+     * @return Returns the FilesRevokePublicUrlErrorEnum
      */
     @JsonGetter("error")
-    public Error58 getError() {
+    public FilesRevokePublicUrlErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error58
+     * @param error Value for FilesRevokePublicUrlErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error58 error) {
+    private void setError(FilesRevokePublicUrlErrorEnum error) {
         this.error = error;
     }
 

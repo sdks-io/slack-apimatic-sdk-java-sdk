@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.disconnectShared
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error4`](../../doc/models/error-4.md) | Required | - | Error4 getError() | setError(Error4 error) |
+| `Error` | [`AdminConversationsDisconnectSharedErrorEnum`](../../doc/models/admin-conversations-disconnect-shared-error-enum.md) | Required | - | AdminConversationsDisconnectSharedErrorEnum getError() | setError(AdminConversationsDisconnectSharedErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

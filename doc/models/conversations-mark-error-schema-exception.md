@@ -14,7 +14,7 @@ Schema for error response from conversations.mark method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error41`](../../doc/models/error-41.md) | Required | - | Error41 getError() | setError(Error41 error) |
+| `Error` | [`ConversationsMarkErrorEnum`](../../doc/models/conversations-mark-error-enum.md) | Required | - | ConversationsMarkErrorEnum getError() | setError(ConversationsMarkErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

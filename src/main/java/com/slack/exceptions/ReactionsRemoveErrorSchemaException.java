@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error68;
+import com.slack.models.ReactionsRemoveErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ReactionsRemoveErrorSchemaException type.
  */
 public class ReactionsRemoveErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -5231417184853778595L;
+    private static final long serialVersionUID = -5231479582395327048L;
     private String callstack;
-    private Error68 error;
+    private ReactionsRemoveErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class ReactionsRemoveErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error68
+     * @return Returns the ReactionsRemoveErrorEnum
      */
     @JsonGetter("error")
-    public Error68 getError() {
+    public ReactionsRemoveErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error68
+     * @param error Value for ReactionsRemoveErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error68 error) {
+    private void setError(ReactionsRemoveErrorEnum error) {
         this.error = error;
     }
 

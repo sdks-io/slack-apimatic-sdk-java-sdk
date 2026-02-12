@@ -14,7 +14,7 @@ Schema for error response from reminders.add method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error69`](../../doc/models/error-69.md) | Required | - | Error69 getError() | setError(Error69 error) |
+| `Error` | [`RemindersAddErrorEnum`](../../doc/models/reminders-add-error-enum.md) | Required | - | RemindersAddErrorEnum getError() | setError(RemindersAddErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

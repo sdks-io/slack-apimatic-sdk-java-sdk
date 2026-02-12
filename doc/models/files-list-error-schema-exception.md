@@ -14,7 +14,7 @@ Schema for error response from files.list method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error57`](../../doc/models/error-57.md) | Required | - | Error57 getError() | setError(Error57 error) |
+| `Error` | [`FilesListErrorEnum`](../../doc/models/files-list-error-enum.md) | Required | - | FilesListErrorEnum getError() | setError(FilesListErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

@@ -8,15 +8,15 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error3;
+import com.slack.models.AdminConversationsDeleteErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AdminConversationsDeleteErrorSchemaException type.
  */
 public class AdminConversationsDeleteErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -2344657683062281907L;
-    private Error3 error;
+    private static final long serialVersionUID = -2344647037701488587L;
+    private AdminConversationsDeleteErrorEnum error;
     private String ok;
 
     /**
@@ -31,19 +31,19 @@ public class AdminConversationsDeleteErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error3
+     * @return Returns the AdminConversationsDeleteErrorEnum
      */
     @JsonGetter("error")
-    public Error3 getError() {
+    public AdminConversationsDeleteErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error3
+     * @param error Value for AdminConversationsDeleteErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error3 error) {
+    private void setError(AdminConversationsDeleteErrorEnum error) {
         this.error = error;
     }
 

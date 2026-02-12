@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error53;
+import com.slack.models.DndSetSnoozeErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for DndSetSnoozeErrorSchemaException type.
  */
 public class DndSetSnoozeErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -7587932189226652299L;
+    private static final long serialVersionUID = -7588086410845489696L;
     private String callstack;
-    private Error53 error;
+    private DndSetSnoozeErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class DndSetSnoozeErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error53
+     * @return Returns the DndSetSnoozeErrorEnum
      */
     @JsonGetter("error")
-    public Error53 getError() {
+    public DndSetSnoozeErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error53
+     * @param error Value for DndSetSnoozeErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error53 error) {
+    private void setError(DndSetSnoozeErrorEnum error) {
         this.error = error;
     }
 

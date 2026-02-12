@@ -14,7 +14,7 @@ Schema for error response from pins.remove method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error64`](../../doc/models/error-64.md) | Required | - | Error64 getError() | setError(Error64 error) |
+| `Error` | [`PinsRemoveErrorEnum`](../../doc/models/pins-remove-error-enum.md) | Required | - | PinsRemoveErrorEnum getError() | setError(PinsRemoveErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

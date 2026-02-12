@@ -14,7 +14,7 @@ Schema for error response conversations.members method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error42`](../../doc/models/error-42.md) | Required | - | Error42 getError() | setError(Error42 error) |
+| `Error` | [`ConversationsMembersErrorEnum`](../../doc/models/conversations-members-error-enum.md) | Required | - | ConversationsMembersErrorEnum getError() | setError(ConversationsMembersErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

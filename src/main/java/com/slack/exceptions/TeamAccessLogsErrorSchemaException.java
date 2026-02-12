@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error78;
+import com.slack.models.TeamAccessLogsErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for TeamAccessLogsErrorSchemaException type.
  */
 public class TeamAccessLogsErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 6515882321456033078L;
+    private static final long serialVersionUID = -6515869596261829460L;
     private String callstack;
-    private Error78 error;
+    private TeamAccessLogsErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class TeamAccessLogsErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error78
+     * @return Returns the TeamAccessLogsErrorEnum
      */
     @JsonGetter("error")
-    public Error78 getError() {
+    public TeamAccessLogsErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error78
+     * @param error Value for TeamAccessLogsErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error78 error) {
+    private void setError(TeamAccessLogsErrorEnum error) {
         this.error = error;
     }
 

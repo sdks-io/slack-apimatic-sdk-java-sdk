@@ -14,7 +14,7 @@ Schema for error response from files.revokePublicURL method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error58`](../../doc/models/error-58.md) | Required | - | Error58 getError() | setError(Error58 error) |
+| `Error` | [`FilesRevokePublicUrlErrorEnum`](../../doc/models/files-revoke-public-url-error-enum.md) | Required | - | FilesRevokePublicUrlErrorEnum getError() | setError(FilesRevokePublicUrlErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

@@ -14,7 +14,7 @@ Schema for error response from reactions.list method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error67`](../../doc/models/error-67.md) | Required | - | Error67 getError() | setError(Error67 error) |
+| `Error` | [`ReactionsListErrorEnum`](../../doc/models/reactions-list-error-enum.md) | Required | - | ReactionsListErrorEnum getError() | setError(ReactionsListErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

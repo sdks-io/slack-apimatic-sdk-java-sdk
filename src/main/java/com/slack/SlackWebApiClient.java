@@ -45,8 +45,8 @@ import com.slack.apis.FilesApi;
 import com.slack.apis.FilesCommentsApi;
 import com.slack.apis.FilesRemoteApi;
 import com.slack.apis.MigrationApi;
-import com.slack.apis.OAuthAuthorizationApi;
 import com.slack.apis.OauthApi;
+import com.slack.apis.OauthAuthorizationApi;
 import com.slack.apis.OauthV2Api;
 import com.slack.apis.PinsApi;
 import com.slack.apis.ReactionsApi;
@@ -145,11 +145,11 @@ public final class SlackWebApiClient implements Configuration {
     private UsersProfileApi usersProfile;
     private ViewsApi views;
     private WorkflowsApi workflows;
-    private OAuthAuthorizationApi oAuthAuthorization;
+    private OauthAuthorizationApi oauthAuthorization;
 
     private static final CompatibilityFactory compatibilityFactory = new CompatibilityFactoryImpl();
 
-    private static String userAgent = "Java-SDK/1.0.0 (OS: {os-info}, Engine: {engine}/{engine-version})";
+    private static String userAgent = "Java-SDK/1.0.1 (OS: {os-info}, Engine: {engine}/{engine-version})";
 
     /**
      * Current API environment.
@@ -272,7 +272,7 @@ public final class SlackWebApiClient implements Configuration {
         usersProfile = new UsersProfileApi(globalConfig);
         views = new ViewsApi(globalConfig);
         workflows = new WorkflowsApi(globalConfig);
-        oAuthAuthorization = new OAuthAuthorizationApi(globalConfig);
+        oauthAuthorization = new OauthAuthorizationApi(globalConfig);
     }
 
     /**
@@ -723,11 +723,11 @@ public final class SlackWebApiClient implements Configuration {
     }
 
     /**
-     * Get the instance of OAuthAuthorizationApi.
-     * @return oAuthAuthorization
+     * Get the instance of OauthAuthorizationApi.
+     * @return oauthAuthorization
      */
-    public OAuthAuthorizationApi getOAuthAuthorizationApi() {
-        return oAuthAuthorization;
+    public OauthAuthorizationApi getOauthAuthorizationApi() {
+        return oauthAuthorization;
     }
 
     /**

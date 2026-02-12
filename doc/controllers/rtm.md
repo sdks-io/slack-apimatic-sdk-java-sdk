@@ -27,8 +27,8 @@ CompletableFuture<ApiResponse<RtmConnectSchema>> rtmConnectAsync(
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `token` | `String` | Query, Required | Authentication token. Requires scope: `rtm:stream` |
-| `batchPresenceAware` | `Boolean` | Query, Optional | Batch presence deliveries via subscription. Enabling changes the shape of `presence_change` events. See [batch presence](/docs/presence-and-status#batching). |
-| `presenceSub` | `Boolean` | Query, Optional | Only deliver presence events when requested by subscription. See [presence subscriptions](/docs/presence-and-status#subscriptions). |
+| `batchPresenceAware` | `Boolean` | Query, Optional | Batch presence deliveries via subscription. Enabling changes the shape of `presence_change` events. |
+| `presenceSub` | `Boolean` | Query, Optional | Only deliver presence events when requested by subscription |
 
 ## Requires scope
 

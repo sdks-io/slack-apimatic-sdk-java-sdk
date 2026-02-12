@@ -14,7 +14,7 @@ Schema for error response from dnd.setSnooze method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error53`](../../doc/models/error-53.md) | Required | - | Error53 getError() | setError(Error53 error) |
+| `Error` | [`DndSetSnoozeErrorEnum`](../../doc/models/dnd-set-snooze-error-enum.md) | Required | - | DndSetSnoozeErrorEnum getError() | setError(DndSetSnoozeErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

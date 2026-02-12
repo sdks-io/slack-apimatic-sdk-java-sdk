@@ -14,7 +14,7 @@ Schema for error response from conversations.unarchive method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error48`](../../doc/models/error-48.md) | Required | - | Error48 getError() | setError(Error48 error) |
+| `Error` | [`ConversationsUnarchiveErrorEnum`](../../doc/models/conversations-unarchive-error-enum.md) | Required | - | ConversationsUnarchiveErrorEnum getError() | setError(ConversationsUnarchiveErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

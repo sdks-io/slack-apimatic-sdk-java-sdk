@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error60;
+import com.slack.models.FilesUploadErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for FilesUploadErrorSchemaException type.
  */
 public class FilesUploadErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -2248515071531573809L;
+    private static final long serialVersionUID = 2248393362207182204L;
     private String callstack;
-    private Error60 error;
+    private FilesUploadErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class FilesUploadErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error60
+     * @return Returns the FilesUploadErrorEnum
      */
     @JsonGetter("error")
-    public Error60 getError() {
+    public FilesUploadErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error60
+     * @param error Value for FilesUploadErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error60 error) {
+    private void setError(FilesUploadErrorEnum error) {
         this.error = error;
     }
 

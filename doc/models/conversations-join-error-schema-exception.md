@@ -14,7 +14,7 @@ Schema for error response from conversations.join method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error37`](../../doc/models/error-37.md) | Required | - | Error37 getError() | setError(Error37 error) |
+| `Error` | [`ConversationsJoinErrorEnum`](../../doc/models/conversations-join-error-enum.md) | Required | - | ConversationsJoinErrorEnum getError() | setError(ConversationsJoinErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error71;
+import com.slack.models.RemindersDeleteErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for RemindersDeleteErrorSchemaException type.
  */
 public class RemindersDeleteErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -2732058890210318965L;
+    private static final long serialVersionUID = -2732138418153929204L;
     private String callstack;
-    private Error71 error;
+    private RemindersDeleteErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class RemindersDeleteErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error71
+     * @return Returns the RemindersDeleteErrorEnum
      */
     @JsonGetter("error")
-    public Error71 getError() {
+    public RemindersDeleteErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error71
+     * @param error Value for RemindersDeleteErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error71 error) {
+    private void setError(RemindersDeleteErrorEnum error) {
         this.error = error;
     }
 

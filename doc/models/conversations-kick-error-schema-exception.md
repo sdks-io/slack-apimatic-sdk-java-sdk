@@ -14,7 +14,7 @@ Schema for error response conversations.kick method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error38`](../../doc/models/error-38.md) | Required | - | Error38 getError() | setError(Error38 error) |
+| `Error` | [`ConversationsKickErrorEnum`](../../doc/models/conversations-kick-error-enum.md) | Required | - | ConversationsKickErrorEnum getError() | setError(ConversationsKickErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error17;
+import com.slack.models.AuthRevokeErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AuthRevokeErrorSchemaException type.
  */
 public class AuthRevokeErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 6169905236251808639L;
+    private static final long serialVersionUID = 6169775801702556216L;
     private String callstack;
-    private Error17 error;
+    private AuthRevokeErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class AuthRevokeErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error17
+     * @return Returns the AuthRevokeErrorEnum
      */
     @JsonGetter("error")
-    public Error17 getError() {
+    public AuthRevokeErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error17
+     * @param error Value for AuthRevokeErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error17 error) {
+    private void setError(AuthRevokeErrorEnum error) {
         this.error = error;
     }
 

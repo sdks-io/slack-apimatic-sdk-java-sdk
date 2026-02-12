@@ -284,8 +284,7 @@ public final class ConversationsApi extends BaseApi {
      *         been reached.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsHistorySuccessSchema wrapped in ApiResponse response from the API call
      * @throws    ApiException    Represents error response from the server.
      * @throws    IOException    Signals that an I/O exception of some sort has occurred.
@@ -316,8 +315,7 @@ public final class ConversationsApi extends BaseApi {
      *         been reached.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsHistorySuccessSchema wrapped in ApiResponse response from the API call
      */
     public CompletableFuture<ApiResponse<ConversationsHistorySuccessSchema>> conversationsHistoryAsync(
@@ -755,8 +753,7 @@ public final class ConversationsApi extends BaseApi {
      *         reached. Must be an integer no larger than 1000.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsListSuccessSchema wrapped in ApiResponse response from the API call
      * @throws    ApiException    Represents error response from the server.
      * @throws    IOException    Signals that an I/O exception of some sort has occurred.
@@ -783,8 +780,7 @@ public final class ConversationsApi extends BaseApi {
      *         reached. Must be an integer no larger than 1000.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsListSuccessSchema wrapped in ApiResponse response from the API call
      */
     public CompletableFuture<ApiResponse<ConversationsListSuccessSchema>> conversationsListAsync(
@@ -926,8 +922,7 @@ public final class ConversationsApi extends BaseApi {
      *         been reached.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsMembersSuccessSchema wrapped in ApiResponse response from the API call
      * @throws    ApiException    Represents error response from the server.
      * @throws    IOException    Signals that an I/O exception of some sort has occurred.
@@ -949,8 +944,7 @@ public final class ConversationsApi extends BaseApi {
      *         been reached.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsMembersSuccessSchema wrapped in ApiResponse response from the API call
      */
     public CompletableFuture<ApiResponse<ConversationsMembersSuccessSchema>> conversationsMembersAsync(
@@ -1183,8 +1177,7 @@ public final class ConversationsApi extends BaseApi {
      *         been reached.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsRepliesSuccessSchema wrapped in ApiResponse response from the API call
      * @throws    ApiException    Represents error response from the server.
      * @throws    IOException    Signals that an I/O exception of some sort has occurred.
@@ -1220,8 +1213,7 @@ public final class ConversationsApi extends BaseApi {
      *         been reached.
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @return    Returns the ConversationsRepliesSuccessSchema wrapped in ApiResponse response from the API call
      */
     public CompletableFuture<ApiResponse<ConversationsRepliesSuccessSchema>> conversationsRepliesAsync(

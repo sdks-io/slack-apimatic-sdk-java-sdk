@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.convertToPrivate
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error1`](../../doc/models/error-1.md) | Required | - | Error1 getError() | setError(Error1 error) |
+| `Error` | [`AdminConversationsConvertToPrivateErrorEnum`](../../doc/models/admin-conversations-convert-to-private-error-enum.md) | Required | - | AdminConversationsConvertToPrivateErrorEnum getError() | setError(AdminConversationsConvertToPrivateErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

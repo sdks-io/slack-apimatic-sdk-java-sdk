@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error12;
+import com.slack.models.AppsPermissionsInfoErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AppsPermissionsScopesListErrorSchemaException type.
  */
 public class AppsPermissionsScopesListErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -513971128865071425L;
+    private static final long serialVersionUID = -513986222595408261L;
     private String callstack;
-    private Error12 error;
+    private AppsPermissionsInfoErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class AppsPermissionsScopesListErrorSchemaException extends ApiException 
 
     /**
      * Getter for Error.
-     * @return Returns the Error12
+     * @return Returns the AppsPermissionsInfoErrorEnum
      */
     @JsonGetter("error")
-    public Error12 getError() {
+    public AppsPermissionsInfoErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error12
+     * @param error Value for AppsPermissionsInfoErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error12 error) {
+    private void setError(AppsPermissionsInfoErrorEnum error) {
         this.error = error;
     }
 

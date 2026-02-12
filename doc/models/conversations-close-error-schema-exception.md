@@ -14,7 +14,7 @@ Schema for error response from conversations.close method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error31`](../../doc/models/error-31.md) | Required | - | Error31 getError() | setError(Error31 error) |
+| `Error` | [`ConversationsCloseErrorEnum`](../../doc/models/conversations-close-error-enum.md) | Required | - | ConversationsCloseErrorEnum getError() | setError(ConversationsCloseErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

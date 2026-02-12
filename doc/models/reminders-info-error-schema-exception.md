@@ -14,7 +14,7 @@ Schema for error response from reminders.info method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error71`](../../doc/models/error-71.md) | Required | - | Error71 getError() | setError(Error71 error) |
+| `Error` | [`RemindersDeleteErrorEnum`](../../doc/models/reminders-delete-error-enum.md) | Required | - | RemindersDeleteErrorEnum getError() | setError(RemindersDeleteErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

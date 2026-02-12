@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error54;
+import com.slack.models.FilesCommentsDeleteErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for FilesCommentsDeleteErrorSchemaException type.
  */
 public class FilesCommentsDeleteErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 6816186771878557196L;
+    private static final long serialVersionUID = 6816219173431471182L;
     private String callstack;
-    private Error54 error;
+    private FilesCommentsDeleteErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class FilesCommentsDeleteErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error54
+     * @return Returns the FilesCommentsDeleteErrorEnum
      */
     @JsonGetter("error")
-    public Error54 getError() {
+    public FilesCommentsDeleteErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error54
+     * @param error Value for FilesCommentsDeleteErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error54 error) {
+    private void setError(FilesCommentsDeleteErrorEnum error) {
         this.error = error;
     }
 

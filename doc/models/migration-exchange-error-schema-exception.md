@@ -14,7 +14,7 @@ Schema for error response from migration.exchange method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error61`](../../doc/models/error-61.md) | Required | - | Error61 getError() | setError(Error61 error) |
+| `Error` | [`MigrationExchangeErrorEnum`](../../doc/models/migration-exchange-error-enum.md) | Required | - | MigrationExchangeErrorEnum getError() | setError(MigrationExchangeErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

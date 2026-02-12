@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error22;
+import com.slack.models.ChatGetPermalinkErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ChatGetPermalinkErrorSchemaException type.
  */
 public class ChatGetPermalinkErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 3065922810142984200L;
+    private static final long serialVersionUID = -3066019035287699436L;
     private String callstack;
-    private Error22 error;
+    private ChatGetPermalinkErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class ChatGetPermalinkErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error22
+     * @return Returns the ChatGetPermalinkErrorEnum
      */
     @JsonGetter("error")
-    public Error22 getError() {
+    public ChatGetPermalinkErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error22
+     * @param error Value for ChatGetPermalinkErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error22 error) {
+    private void setError(ChatGetPermalinkErrorEnum error) {
         this.error = error;
     }
 

@@ -8,17 +8,17 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error32;
+import com.slack.models.ConversationsCreateErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ConversationsCreateErrorSchemaException type.
  */
 public class ConversationsCreateErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 4817111476318609504L;
+    private static final long serialVersionUID = -1907461036505482576L;
     private String callstack;
     private String detail;
-    private Error32 error;
+    private ConversationsCreateErrorEnum error;
     private String needed;
     private String ok;
     private String provided;
@@ -73,19 +73,19 @@ public class ConversationsCreateErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error32
+     * @return Returns the ConversationsCreateErrorEnum
      */
     @JsonGetter("error")
-    public Error32 getError() {
+    public ConversationsCreateErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error32
+     * @param error Value for ConversationsCreateErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error32 error) {
+    private void setError(ConversationsCreateErrorEnum error) {
         this.error = error;
     }
 

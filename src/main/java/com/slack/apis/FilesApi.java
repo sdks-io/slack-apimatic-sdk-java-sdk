@@ -120,7 +120,7 @@ public final class FilesApi extends BaseApi {
      *         a single file. Set `cursor` equal to the `next_cursor` attribute returned by the
      *         previous request's `response_metadata`. This parameter is optional, but pagination is
      *         mandatory: the default value simply fetches the first "page" of the collection of
-     *         comments. See [pagination](/docs/pagination) for more details.
+     *         comments.
      * @return    Returns the FilesInfoSchema wrapped in ApiResponse response from the API call
      * @throws    ApiException    Represents error response from the server.
      * @throws    IOException    Signals that an I/O exception of some sort has occurred.
@@ -148,7 +148,7 @@ public final class FilesApi extends BaseApi {
      *         a single file. Set `cursor` equal to the `next_cursor` attribute returned by the
      *         previous request's `response_metadata`. This parameter is optional, but pagination is
      *         mandatory: the default value simply fetches the first "page" of the collection of
-     *         comments. See [pagination](/docs/pagination) for more details.
+     *         comments.
      * @return    Returns the FilesInfoSchema wrapped in ApiResponse response from the API call
      */
     public CompletableFuture<ApiResponse<FilesInfoSchema>> filesInfoAsync(

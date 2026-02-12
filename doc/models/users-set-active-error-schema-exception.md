@@ -14,7 +14,7 @@ Schema for error response from users.setActive method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error97`](../../doc/models/error-97.md) | Required | - | Error97 getError() | setError(Error97 error) |
+| `Error` | [`UsersSetActiveErrorEnum`](../../doc/models/users-set-active-error-enum.md) | Required | - | UsersSetActiveErrorEnum getError() | setError(UsersSetActiveErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

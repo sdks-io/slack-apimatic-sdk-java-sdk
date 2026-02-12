@@ -9,10 +9,10 @@ package com.slack.authentication;
 import com.slack.ApiHelper;
 import com.slack.AuthorizationCodeAuth;
 import com.slack.Server;
-import com.slack.apis.OAuthAuthorizationApi;
+import com.slack.apis.OauthAuthorizationApi;
 import com.slack.exceptions.ApiException;
-import com.slack.models.OAuthScope;
-import com.slack.models.OAuthToken;
+import com.slack.models.OauthScope;
+import com.slack.models.OauthToken;
 import io.apimatic.core.GlobalConfiguration;
 import io.apimatic.core.authentication.HeaderAuth;
 import io.apimatic.coreinterfaces.http.request.ArraySerializationFormat;
@@ -34,7 +34,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
     /**
      * Private instance of OAuth 2 API controller.
      */
-    private OAuthAuthorizationApi oAuthApi;
+    private OauthAuthorizationApi oAuthApi;
 
     /**
      * Private instance of the configuration to be used.
@@ -51,7 +51,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      */
     public AuthorizationCodeAuthManager(AuthorizationCodeAuthModel authModel) {
         super(Collections.singletonMap("Authorization",
-                getAuthorizationHeader(authModel.getOAuthToken())));
+                getAuthorizationHeader(authModel.getOauthToken())));
         this.authModel = authModel;
     }
 
@@ -61,70 +61,70 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
     */
     public void applyGlobalConfiguration(GlobalConfiguration config) {
         this.config = config;
-        this.oAuthApi = new OAuthAuthorizationApi(config);
+        this.oAuthApi = new OauthAuthorizationApi(config);
     }
 
 
     /**
-     * String value for oAuthClientId.
-     * @return oAuthClientId
+     * String value for oauthClientId.
+     * @return oauthClientId
      */
-    public String getOAuthClientId() {
-        return authModel.getOAuthClientId();
+    public String getOauthClientId() {
+        return authModel.getOauthClientId();
     }
 
     /**
-     * String value for oAuthClientSecret.
-     * @return oAuthClientSecret
+     * String value for oauthClientSecret.
+     * @return oauthClientSecret
      */
-    public String getOAuthClientSecret() {
-        return authModel.getOAuthClientSecret();
+    public String getOauthClientSecret() {
+        return authModel.getOauthClientSecret();
     }
 
     /**
-     * String value for oAuthRedirectUri.
-     * @return oAuthRedirectUri
+     * String value for oauthRedirectUri.
+     * @return oauthRedirectUri
      */
-    public String getOAuthRedirectUri() {
-        return authModel.getOAuthRedirectUri();
+    public String getOauthRedirectUri() {
+        return authModel.getOauthRedirectUri();
     }
 
     /**
-     * OAuthToken value for oAuthToken.
-     * @return oAuthToken
+     * OauthToken value for oauthToken.
+     * @return oauthToken
      */
-    public OAuthToken getOAuthToken() {
-        return authModel.getOAuthToken();
+    public OauthToken getOauthToken() {
+        return authModel.getOauthToken();
     }
 
     /**
-     * List of OAuthScope value for oAuthScopes.
-     * @return oAuthScopes
+     * List of OauthScope value for oauthScopes.
+     * @return oauthScopes
      */
-    public List<OAuthScope> getOAuthScopes() {
-        return authModel.getOAuthScopes();
+    public List<OauthScope> getOauthScopes() {
+        return authModel.getOauthScopes();
     }
 
     /**
      * Checks if provided credentials matched with existing ones.
-     * @param oAuthClientId String value for credentials.
-     * @param oAuthClientSecret String value for credentials.
-     * @param oAuthRedirectUri String value for credentials.
-     * @param oAuthToken OAuthToken value for credentials.
-     * @param oAuthScopes List of OAuthScope value for credentials.
+     * @param oauthClientId String value for credentials.
+     * @param oauthClientSecret String value for credentials.
+     * @param oauthRedirectUri String value for credentials.
+     * @param oauthToken OauthToken value for credentials.
+     * @param oauthScopes List of OauthScope value for credentials.
      * @return true if credentials matched.
      */
-    public boolean equals(String oAuthClientId, String oAuthClientSecret, String oAuthRedirectUri,
-            OAuthToken oAuthToken, List<OAuthScope> oAuthScopes) {
-        return oAuthClientId.equals(getOAuthClientId())
-                && oAuthClientSecret.equals(getOAuthClientSecret())
-                && oAuthRedirectUri.equals(getOAuthRedirectUri())
-                && ((getOAuthToken() == null && oAuthToken == null)
-                        || (getOAuthToken() != null && oAuthToken != null
-                                && oAuthToken.toString().equals(getOAuthToken().toString())))
-                && ((getOAuthScopes() == null && oAuthScopes == null)
-                        || (getOAuthScopes() != null && oAuthScopes != null
-                                && oAuthScopes.equals(getOAuthScopes())));
+    public boolean equals(String oauthClientId, String oauthClientSecret, String oauthRedirectUri,
+            OauthToken oauthToken, List<OauthScope> oauthScopes) {
+        return oauthClientId.equals(getOauthClientId())
+                && oauthClientSecret.equals(getOauthClientSecret())
+                && oauthRedirectUri.equals(getOauthRedirectUri())
+                && ((getOauthToken() == null && oauthToken == null)
+                        || (getOauthToken() != null && oauthToken != null
+                                && oauthToken.toString().equals(getOauthToken().toString())))
+                && ((getOauthScopes() == null && oauthScopes == null)
+                        || (getOauthScopes() != null && oauthScopes != null
+                                && oauthScopes.equals(getOauthScopes())));
     }
 
     /**
@@ -133,10 +133,10 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      */
     @Override
     public String toString() {
-        return "AuthorizationCodeAuthManager [" + "oAuthClientId=" + getOAuthClientId()
-                + ", oAuthClientSecret=" + getOAuthClientSecret() + ", oAuthRedirectUri="
-                + getOAuthRedirectUri() + ", oAuthToken=" + getOAuthToken() + ", oAuthScopes="
-                + getOAuthScopes() + "]";
+        return "AuthorizationCodeAuthManager [" + "oauthClientId=" + getOauthClientId()
+                + ", oauthClientSecret=" + getOauthClientSecret() + ", oauthRedirectUri="
+                + getOauthRedirectUri() + ", oauthToken=" + getOauthToken() + ", oauthScopes="
+                + getOauthScopes() + "]";
     }
 
     /**
@@ -157,9 +157,9 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
             private static final long serialVersionUID = 1L;
             {
                 put("response_type", "code");
-                put("client_id", getOAuthClientId());
-                put("redirect_uri", getOAuthRedirectUri());
-                put("scope", stringJoin(getOAuthScopes(), " "));
+                put("client_id", getOauthClientId());
+                put("redirect_uri", getOauthRedirectUri());
+                put("scope", stringJoin(getOauthScopes(), " "));
                 put("state", state);
             }
         };
@@ -197,16 +197,16 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * @param authorizationCode Authorization code returned by the OAuth provider.
      * @param additionalParameters Additional parameters to send during authorization.
      */
-    public CompletableFuture<OAuthToken> fetchTokenAsync(final String authorizationCode,
+    public CompletableFuture<OauthToken> fetchTokenAsync(final String authorizationCode,
             final Map<String, Object> additionalParameters) {
         final Map<String, Object> aparams =
                 additionalParameters == null ? new HashMap<String, Object>() : additionalParameters;
         return oAuthApi.requestTokenAsync(
             getBasicAuthForClient(),
             authorizationCode,
-            getOAuthRedirectUri(),
+            getOauthRedirectUri(),
             aparams).thenApply(result -> {
-                OAuthToken token = result.getResult();
+                OauthToken token = result.getResult();
                 Long expiresIn = token.getExpiresIn();
                 if (expiresIn != null && expiresIn != 0) {
                     token.setExpiry((System.currentTimeMillis() / 1000L) + token.getExpiresIn());
@@ -219,7 +219,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * Fetch the OAuth token asynchronously.
      * @param authorizationCode Authorization code returned by the OAuth provider.
      */
-    public CompletableFuture<OAuthToken> fetchTokenAsync(final String authorizationCode) {
+    public CompletableFuture<OauthToken> fetchTokenAsync(final String authorizationCode) {
         return fetchTokenAsync(authorizationCode, null);
     }
 
@@ -228,14 +228,14 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * @param authorizationCode Authorization code returned by the OAuth provider.
      * @param additionalParameters Additional parameters to send during authorization.
      */
-    public OAuthToken fetchToken(String authorizationCode, Map<String, Object> additionalParameters)
+    public OauthToken fetchToken(String authorizationCode, Map<String, Object> additionalParameters)
             throws ApiException, IOException {
         final Map<String, Object> aparams =
                 additionalParameters == null ? new HashMap<String, Object>() : additionalParameters;
-        OAuthToken token = oAuthApi.requestToken(
+        OauthToken token = oAuthApi.requestToken(
             getBasicAuthForClient(),
             authorizationCode,
-            getOAuthRedirectUri(),
+            getOauthRedirectUri(),
             aparams).getResult();
 
         if (token.getExpiresIn() != null && token.getExpiresIn() != 0) {
@@ -249,7 +249,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * Fetch the OAuth token.
      * @param authorizationCode Authorization code returned by the OAuth provider
      */
-    public OAuthToken fetchToken(String authorizationCode) throws ApiException, IOException {
+    public OauthToken fetchToken(String authorizationCode) throws ApiException, IOException {
         return fetchToken(authorizationCode, null);
     }
 
@@ -257,15 +257,15 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * Refresh the OAuth token.
      * @param additionalParameters Additional parameters to send during token refresh.
      */
-    public CompletableFuture<OAuthToken> refreshTokenAsync(
+    public CompletableFuture<OauthToken> refreshTokenAsync(
             final Map<String, Object> additionalParameters) {
 
         final Map<String, Object> aparams =
                 additionalParameters == null ? new HashMap<String, Object>() : additionalParameters;
         return oAuthApi.refreshTokenAsync(
             getBasicAuthForClient(),
-            getOAuthToken().getRefreshToken(),
-            stringJoin(getOAuthScopes(), " "),
+            getOauthToken().getRefreshToken(),
+            stringJoin(getOauthScopes(), " "),
             aparams).thenApply(token -> {
                 return token.getResult();
             });
@@ -274,7 +274,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
     /**
      * Refresh the OAuth token.
      */
-    public CompletableFuture<OAuthToken> refreshTokenAsync() {
+    public CompletableFuture<OauthToken> refreshTokenAsync() {
         return refreshTokenAsync(null);
     }
 
@@ -282,14 +282,14 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * Refresh the OAuth token.
      * @param additionalParameters Additional parameters to send during token refresh.
      */
-    public OAuthToken refreshToken(final Map<String, Object> additionalParameters)
+    public OauthToken refreshToken(final Map<String, Object> additionalParameters)
             throws ApiException, IOException {
         final Map<String, Object> aparams =
                 additionalParameters == null ? new HashMap<String, Object>() : additionalParameters;
-        OAuthToken token = oAuthApi.refreshToken(
+        OauthToken token = oAuthApi.refreshToken(
             getBasicAuthForClient(),
-            getOAuthToken().getRefreshToken(),
-            stringJoin(getOAuthScopes(), " "),
+            getOauthToken().getRefreshToken(),
+            stringJoin(getOauthScopes(), " "),
             aparams).getResult();
         return token;
     }
@@ -297,7 +297,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
     /**
      * Refresh the OAuth token.
      */
-    public OAuthToken refreshToken() throws ApiException, IOException {
+    public OauthToken refreshToken() throws ApiException, IOException {
         return refreshToken(null);
     }
 
@@ -306,7 +306,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * @return Authorization header value for this client
      */
     private String getBasicAuthForClient() {
-        String val = getOAuthClientId() + ":" + getOAuthClientSecret();
+        String val = getOauthClientId() + ":" + getOauthClientSecret();
         return "Basic " + new String(Base64.getEncoder().encodeToString(val.getBytes()));
     }
 
@@ -337,12 +337,12 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
      * @return True if expired
      */
     public boolean isTokenExpired() {
-        if (getOAuthToken() == null) {
+        if (getOauthToken() == null) {
             throw new IllegalStateException("OAuth token is missing.");
         }
 
-        return getOAuthToken().getExpiry() != null 
-            && getOAuthToken().getExpiry() < (System.currentTimeMillis() / 1000L); 
+        return getOauthToken().getExpiry() != null 
+            && getOauthToken().getExpiry() < (System.currentTimeMillis() / 1000L); 
     }
 
     /**
@@ -350,7 +350,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
     * @param token OAuth token
     * @return Authorization header
     */
-    private static String getAuthorizationHeader(OAuthToken token) {
+    private static String getAuthorizationHeader(OauthToken token) {
         if (token == null) {
             return null;
         }
@@ -362,7 +362,7 @@ public class AuthorizationCodeAuthManager extends HeaderAuth implements Authoriz
     */
     @Override
     public void validate() {
-        if (getOAuthToken() == null) {
+        if (getOauthToken() == null) {
             setErrorMessage("Client is not authorized."
                 + " An OAuth token is needed to make API calls.");
             setValidity(false);

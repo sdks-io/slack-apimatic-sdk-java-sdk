@@ -39,8 +39,7 @@ public final class AppsPermissionsUsersApi extends BaseApi {
      * @param  token  Required parameter: Authentication token. Requires scope: `none`
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @param  limit  Optional parameter: The maximum number of items to return.
      * @return    Returns the DefaultSuccessTemplate wrapped in ApiResponse response from the API call
      * @throws    ApiException    Represents error response from the server.
@@ -58,8 +57,7 @@ public final class AppsPermissionsUsersApi extends BaseApi {
      * @param  token  Required parameter: Authentication token. Requires scope: `none`
      * @param  cursor  Optional parameter: Paginate through collections of data by setting the
      *         `cursor` parameter to a `next_cursor` attribute returned by a previous request's
-     *         `response_metadata`. Default value fetches the first "page" of the collection. See
-     *         [pagination](/docs/pagination) for more detail.
+     *         `response_metadata`. Default value fetches the first "page" of the collection.
      * @param  limit  Optional parameter: The maximum number of items to return.
      * @return    Returns the DefaultSuccessTemplate wrapped in ApiResponse response from the API call
      */

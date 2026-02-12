@@ -14,7 +14,7 @@ Schema for error response from dnd.endDnd method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error50`](../../doc/models/error-50.md) | Required | - | Error50 getError() | setError(Error50 error) |
+| `Error` | [`DndEndDndErrorEnum`](../../doc/models/dnd-end-dnd-error-enum.md) | Required | - | DndEndDndErrorEnum getError() | setError(DndEndDndErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

@@ -14,7 +14,7 @@ Schema for error response from users.conversations method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error89`](../../doc/models/error-89.md) | Required | - | Error89 getError() | setError(Error89 error) |
+| `Error` | [`UsersConversationsErrorEnum`](../../doc/models/users-conversations-error-enum.md) | Required | - | UsersConversationsErrorEnum getError() | setError(UsersConversationsErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

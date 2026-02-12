@@ -14,7 +14,7 @@ Schema for error response from team.accessLogs method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error78`](../../doc/models/error-78.md) | Required | - | Error78 getError() | setError(Error78 error) |
+| `Error` | [`TeamAccessLogsErrorEnum`](../../doc/models/team-access-logs-error-enum.md) | Required | - | TeamAccessLogsErrorEnum getError() | setError(TeamAccessLogsErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

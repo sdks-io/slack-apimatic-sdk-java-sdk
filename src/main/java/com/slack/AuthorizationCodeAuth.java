@@ -7,8 +7,8 @@
 package com.slack;
 
 import com.slack.exceptions.ApiException;
-import com.slack.models.OAuthScope;
-import com.slack.models.OAuthToken;
+import com.slack.models.OauthScope;
+import com.slack.models.OauthToken;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -20,46 +20,46 @@ import java.util.concurrent.CompletableFuture;
 public interface AuthorizationCodeAuth {
 
     /**
-     * String value for oAuthClientId.
-     * @return oAuthClientId
+     * String value for oauthClientId.
+     * @return oauthClientId
      */
-    String getOAuthClientId();
+    String getOauthClientId();
 
     /**
-     * String value for oAuthClientSecret.
-     * @return oAuthClientSecret
+     * String value for oauthClientSecret.
+     * @return oauthClientSecret
      */
-    String getOAuthClientSecret();
+    String getOauthClientSecret();
 
     /**
-     * String value for oAuthRedirectUri.
-     * @return oAuthRedirectUri
+     * String value for oauthRedirectUri.
+     * @return oauthRedirectUri
      */
-    String getOAuthRedirectUri();
+    String getOauthRedirectUri();
 
     /**
-     * OAuthToken value for oAuthToken.
-     * @return oAuthToken
+     * OauthToken value for oauthToken.
+     * @return oauthToken
      */
-    OAuthToken getOAuthToken();
+    OauthToken getOauthToken();
 
     /**
-     * List of OAuthScope value for oAuthScopes.
-     * @return oAuthScopes
+     * List of OauthScope value for oauthScopes.
+     * @return oauthScopes
      */
-    List<OAuthScope> getOAuthScopes();
+    List<OauthScope> getOauthScopes();
 
     /**
      * Checks if provided credentials matched with existing ones.
-     * @param oAuthClientId String value for credentials.
-     * @param oAuthClientSecret String value for credentials.
-     * @param oAuthRedirectUri String value for credentials.
-     * @param oAuthToken OAuthToken value for credentials.
-     * @param oAuthScopes List of OAuthScope value for credentials.
+     * @param oauthClientId String value for credentials.
+     * @param oauthClientSecret String value for credentials.
+     * @param oauthRedirectUri String value for credentials.
+     * @param oauthToken OauthToken value for credentials.
+     * @param oauthScopes List of OauthScope value for credentials.
      * @return true if credentials matched.
      */
-    boolean equals(String oAuthClientId, String oAuthClientSecret, String oAuthRedirectUri,
-            OAuthToken oAuthToken, List<OAuthScope> oAuthScopes);
+    boolean equals(String oauthClientId, String oauthClientSecret, String oauthRedirectUri,
+            OauthToken oauthToken, List<OauthScope> oauthScopes);
 
     /**
      * Build an authorization URL for taking the user's consent to access data.
@@ -88,51 +88,51 @@ public interface AuthorizationCodeAuth {
      * @param authorizationCode Authorization code returned by the OAuth provider.
      * @param additionalParameters Additional parameters to send during authorization.
      */
-    CompletableFuture<OAuthToken> fetchTokenAsync(final String authorizationCode,
+    CompletableFuture<OauthToken> fetchTokenAsync(final String authorizationCode,
             final Map<String, Object> additionalParameters);
 
     /**
      * Fetch the OAuth token asynchronously.
      * @param authorizationCode Authorization code returned by the OAuth provider.
      */
-    CompletableFuture<OAuthToken> fetchTokenAsync(final String authorizationCode);
+    CompletableFuture<OauthToken> fetchTokenAsync(final String authorizationCode);
 
     /**
      * Fetch the OAuth token.
      * @param authorizationCode Authorization code returned by the OAuth provider.
      * @param additionalParameters Additional parameters to send during authorization.
      */
-    OAuthToken fetchToken(String authorizationCode,
+    OauthToken fetchToken(String authorizationCode,
             Map<String, Object> additionalParameters) throws ApiException, IOException;
 
     /**
      * Fetch the OAuth token.
      * @param authorizationCode Authorization code returned by the OAuth provider
      */
-    OAuthToken fetchToken(String authorizationCode) throws ApiException, IOException;
+    OauthToken fetchToken(String authorizationCode) throws ApiException, IOException;
 
     /**
      * Refresh the OAuth token.
      * @param additionalParameters Additional parameters to send during token refresh.
      */
-    CompletableFuture<OAuthToken> refreshTokenAsync(final Map<String, Object> additionalParameters);
+    CompletableFuture<OauthToken> refreshTokenAsync(final Map<String, Object> additionalParameters);
 
     /**
      * Refresh the OAuth token.
      */
-    CompletableFuture<OAuthToken> refreshTokenAsync();
+    CompletableFuture<OauthToken> refreshTokenAsync();
 
     /**
      * Refresh the OAuth token.
      * @param additionalParameters Additional parameters to send during token refresh.
      */
-    OAuthToken refreshToken(final Map<String, Object> additionalParameters) 
+    OauthToken refreshToken(final Map<String, Object> additionalParameters) 
             throws ApiException, IOException;
 
     /**
      * Refresh the OAuth token.
      */
-    OAuthToken refreshToken() throws ApiException, IOException;
+    OauthToken refreshToken() throws ApiException, IOException;
 
     /**
      * Has the OAuth token expired?.

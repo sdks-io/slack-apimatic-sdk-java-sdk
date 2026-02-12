@@ -222,8 +222,7 @@ public final class ReactionsApi extends BaseApi {
      * @param  cursor  Optional parameter: Parameter for pagination. Set `cursor` equal to the
      *         `next_cursor` attribute returned by the previous request's `response_metadata`. This
      *         parameter is optional, but pagination is mandatory: the default value simply fetches
-     *         the first "page" of the collection. See [pagination](/docs/pagination) for more
-     *         details.
+     *         the first "page" of the collection.
      * @param  limit  Optional parameter: The maximum number of items to return. Fewer than the
      *         requested number of items may be returned, even if the end of the list hasn't been
      *         reached.
@@ -253,8 +252,7 @@ public final class ReactionsApi extends BaseApi {
      * @param  cursor  Optional parameter: Parameter for pagination. Set `cursor` equal to the
      *         `next_cursor` attribute returned by the previous request's `response_metadata`. This
      *         parameter is optional, but pagination is mandatory: the default value simply fetches
-     *         the first "page" of the collection. See [pagination](/docs/pagination) for more
-     *         details.
+     *         the first "page" of the collection.
      * @param  limit  Optional parameter: The maximum number of items to return. Fewer than the
      *         requested number of items may be returned, even if the end of the list hasn't been
      *         reached.

@@ -14,7 +14,7 @@ Schema for error response chat.update method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error29`](../../doc/models/error-29.md) | Required | - | Error29 getError() | setError(Error29 error) |
+| `Error` | [`ChatUpdateErrorEnum`](../../doc/models/chat-update-error-enum.md) | Required | - | ChatUpdateErrorEnum getError() | setError(ChatUpdateErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

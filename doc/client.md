@@ -18,8 +18,8 @@ import com.slack.SlackWebApiClient;
 import com.slack.authentication.AuthorizationCodeAuthModel;
 import com.slack.exceptions.ApiException;
 import com.slack.http.response.ApiResponse;
-import com.slack.models.OAuthScope;
-import com.slack.models.OAuthToken;
+import com.slack.models.OauthScope;
+import com.slack.models.OauthToken;
 import java.io.IOException;
 import java.util.Arrays;
 import org.slf4j.event.Level;
@@ -38,9 +38,9 @@ public class Program {
                     "OAuthClientSecret",
                     "OAuthRedirectUri"
                 )
-                .oAuthScopes(Arrays.asList(
-                        OAuthScope.ADMIN,
-                        OAuthScope.ADMIN_APPSREAD
+                .oauthScopes(Arrays.asList(
+                        OauthScope.ADMIN,
+                        OauthScope.ADMIN_APPSREAD
                     ))
                 .build())
             .environment(Environment.PRODUCTION)
@@ -113,7 +113,7 @@ The gateway for the SDK. This class acts as a factory for the Apis and also hold
 | `getUsersProfileApi()` | Provides access to UsersProfile controller. | `UsersProfileApi` |
 | `getViewsApi()` | Provides access to Views controller. | `ViewsApi` |
 | `getWorkflowsApi()` | Provides access to Workflows controller. | `WorkflowsApi` |
-| `getOAuthAuthorizationApi()` | Provides access to OAuthAuthorization controller. | `OAuthAuthorizationApi` |
+| `getOauthAuthorizationApi()` | Provides access to OauthAuthorization controller. | `OauthAuthorizationApi` |
 
 ### Methods
 

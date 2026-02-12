@@ -14,7 +14,7 @@ Schema for error response from conversations.invite method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error35`](../../doc/models/error-35.md) | Optional | - | Error35 getError() | setError(Error35 error) |
+| `Error` | [`ConversationsInviteErrorEnum`](../../doc/models/conversations-invite-error-enum.md) | Optional | - | ConversationsInviteErrorEnum getError() | setError(ConversationsInviteErrorEnum error) |
 | `Errors` | [`List<ErrorsIsReturnedWhenAnErrorAssociatesAnUser>`](../../doc/models/errors-is-returned-when-an-error-associates-an-user.md) | Optional | **Constraints**: *Minimum Items*: `1`, *Unique Items Required* | List<ErrorsIsReturnedWhenAnErrorAssociatesAnUser> getErrors() | setErrors(List<ErrorsIsReturnedWhenAnErrorAssociatesAnUser> errors) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |

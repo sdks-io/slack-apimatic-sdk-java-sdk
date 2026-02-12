@@ -14,7 +14,7 @@ Schema for error response from users.list method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error93`](../../doc/models/error-93.md) | Required | - | Error93 getError() | setError(Error93 error) |
+| `Error` | [`UsersListErrorEnum`](../../doc/models/users-list-error-enum.md) | Required | - | UsersListErrorEnum getError() | setError(UsersListErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

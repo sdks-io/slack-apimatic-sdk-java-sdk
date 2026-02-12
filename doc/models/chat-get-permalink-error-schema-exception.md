@@ -14,7 +14,7 @@ Schema for error response from chat.getPermalink method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error22`](../../doc/models/error-22.md) | Required | - | Error22 getError() | setError(Error22 error) |
+| `Error` | [`ChatGetPermalinkErrorEnum`](../../doc/models/chat-get-permalink-error-enum.md) | Required | - | ChatGetPermalinkErrorEnum getError() | setError(ChatGetPermalinkErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

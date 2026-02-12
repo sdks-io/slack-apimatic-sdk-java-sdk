@@ -8,15 +8,15 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error6;
+import com.slack.models.AdminConversationsGetTeamsErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AdminConversationsGetTeamsErrorSchemaException type.
  */
 public class AdminConversationsGetTeamsErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -5307772695223760065L;
-    private Error6 error;
+    private static final long serialVersionUID = 5307653198568693161L;
+    private AdminConversationsGetTeamsErrorEnum error;
     private String ok;
 
     /**
@@ -31,19 +31,19 @@ public class AdminConversationsGetTeamsErrorSchemaException extends ApiException
 
     /**
      * Getter for Error.
-     * @return Returns the Error6
+     * @return Returns the AdminConversationsGetTeamsErrorEnum
      */
     @JsonGetter("error")
-    public Error6 getError() {
+    public AdminConversationsGetTeamsErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error6
+     * @param error Value for AdminConversationsGetTeamsErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error6 error) {
+    private void setError(AdminConversationsGetTeamsErrorEnum error) {
         this.error = error;
     }
 

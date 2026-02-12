@@ -14,7 +14,7 @@ Schema for error response files.delete method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error55`](../../doc/models/error-55.md) | Required | - | Error55 getError() | setError(Error55 error) |
+| `Error` | [`FilesDeleteErrorEnum`](../../doc/models/files-delete-error-enum.md) | Required | - | FilesDeleteErrorEnum getError() | setError(FilesDeleteErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

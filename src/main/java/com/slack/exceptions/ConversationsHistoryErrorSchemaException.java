@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error33;
+import com.slack.models.ConversationsHistoryErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ConversationsHistoryErrorSchemaException type.
  */
 public class ConversationsHistoryErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 3021101249825305141L;
+    private static final long serialVersionUID = -3762617118098919600L;
     private String callstack;
-    private Error33 error;
+    private ConversationsHistoryErrorEnum error;
     private String needed;
     private String ok;
     private String provided;
@@ -54,19 +54,19 @@ public class ConversationsHistoryErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error33
+     * @return Returns the ConversationsHistoryErrorEnum
      */
     @JsonGetter("error")
-    public Error33 getError() {
+    public ConversationsHistoryErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error33
+     * @param error Value for ConversationsHistoryErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error33 error) {
+    private void setError(ConversationsHistoryErrorEnum error) {
         this.error = error;
     }
 

@@ -14,7 +14,7 @@ Schema for error response from users.profile.get method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error95`](../../doc/models/error-95.md) | Required | - | Error95 getError() | setError(Error95 error) |
+| `Error` | [`UsersProfileGetErrorEnum`](../../doc/models/users-profile-get-error-enum.md) | Required | - | UsersProfileGetErrorEnum getError() | setError(UsersProfileGetErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

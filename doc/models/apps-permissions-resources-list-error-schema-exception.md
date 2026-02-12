@@ -14,7 +14,7 @@ Schema for error response from apps.permissions.resources.list method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error14`](../../doc/models/error-14.md) | Required | - | Error14 getError() | setError(Error14 error) |
+| `Error` | [`AppsPermissionsResourcesListErrorEnum`](../../doc/models/apps-permissions-resources-list-error-enum.md) | Required | - | AppsPermissionsResourcesListErrorEnum getError() | setError(AppsPermissionsResourcesListErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

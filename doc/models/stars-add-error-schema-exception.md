@@ -14,7 +14,7 @@ Schema for error response from stars.add method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error75`](../../doc/models/error-75.md) | Required | - | Error75 getError() | setError(Error75 error) |
+| `Error` | [`StarsAddErrorEnum`](../../doc/models/stars-add-error-enum.md) | Required | - | StarsAddErrorEnum getError() | setError(StarsAddErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

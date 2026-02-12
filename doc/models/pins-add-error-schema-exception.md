@@ -14,7 +14,7 @@ Schema for error response from pins.add method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error62`](../../doc/models/error-62.md) | Required | - | Error62 getError() | setError(Error62 error) |
+| `Error` | [`PinsAddErrorEnum`](../../doc/models/pins-add-error-enum.md) | Required | - | PinsAddErrorEnum getError() | setError(PinsAddErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

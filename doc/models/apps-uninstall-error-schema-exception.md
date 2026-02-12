@@ -14,7 +14,7 @@ Schema for error response from apps.uninstall method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error16`](../../doc/models/error-16.md) | Required | - | Error16 getError() | setError(Error16 error) |
+| `Error` | [`AppsUninstallErrorEnum`](../../doc/models/apps-uninstall-error-enum.md) | Required | - | AppsUninstallErrorEnum getError() | setError(AppsUninstallErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

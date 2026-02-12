@@ -14,7 +14,7 @@ Schema for error response from stars.remove method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error77`](../../doc/models/error-77.md) | Required | - | Error77 getError() | setError(Error77 error) |
+| `Error` | [`StarsRemoveErrorEnum`](../../doc/models/stars-remove-error-enum.md) | Required | - | StarsRemoveErrorEnum getError() | setError(StarsRemoveErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

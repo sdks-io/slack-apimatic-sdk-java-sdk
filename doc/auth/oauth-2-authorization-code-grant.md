@@ -9,11 +9,11 @@ Documentation for accessing and setting credentials for slackAuth.
 
 | Name | Type | Description | Setter | Getter |
 |  --- | --- | --- | --- | --- |
-| OAuthClientId | `String` | OAuth 2 Client ID | `oAuthClientId` | `getOAuthClientId()` |
-| OAuthClientSecret | `String` | OAuth 2 Client Secret | `oAuthClientSecret` | `getOAuthClientSecret()` |
-| OAuthRedirectUri | `String` | OAuth 2 Redirection endpoint or Callback Uri | `oAuthRedirectUri` | `getOAuthRedirectUri()` |
-| OAuthToken | `OAuthToken` | Object for storing information about the OAuth token | `oAuthToken` | `getOAuthToken()` |
-| OAuthScopes | `List<OAuthScope>` | List of scopes that apply to the OAuth token | `oAuthScopes` | `getOAuthScopes()` |
+| OAuthClientId | `String` | OAuth 2 Client ID | `oauthClientId` | `getOauthClientId()` |
+| OAuthClientSecret | `String` | OAuth 2 Client Secret | `oauthClientSecret` | `getOauthClientSecret()` |
+| OAuthRedirectUri | `String` | OAuth 2 Redirection endpoint or Callback Uri | `oauthRedirectUri` | `getOauthRedirectUri()` |
+| OAuthToken | `OauthToken` | Object for storing information about the OAuth token | `oauthToken` | `getOauthToken()` |
+| OAuthScopes | `List<OauthScope>` | List of scopes that apply to the OAuth token | `oauthScopes` | `getOauthScopes()` |
 
 
 
@@ -29,8 +29,8 @@ You must initialize the client with *OAuth 2.0 Authorization Code Grant* credent
 import com.slack.SlackWebApiClient;
 import com.slack.authentication.AuthorizationCodeAuthModel;
 import com.slack.exceptions.ApiException;
-import com.slack.models.OAuthScope;
-import com.slack.models.OAuthToken;
+import com.slack.models.OauthScope;
+import com.slack.models.OauthToken;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -42,9 +42,9 @@ public class Program {
                     "OAuthClientSecret",
                     "OAuthRedirectUri"
                 )
-                .oAuthScopes(Arrays.asList(
-                        OAuthScope.ADMIN,
-                        OAuthScope.ADMIN_APPSREAD
+                .oauthScopes(Arrays.asList(
+                        OauthScope.ADMIN,
+                        OauthScope.ADMIN_APPSREAD
                     ))
                 .build())
             .build();
@@ -92,7 +92,7 @@ try {
     // re-instantiate the client with oauth token
     client = client.newBuilder()
             .authorizationCodeAuth(client.getAuthorizationCodeAuthModel().toBuilder()
-                    .oAuthToken(token)
+                    .oauthToken(token)
                     .build())
             .build();
 } catch (Throwable e) {
@@ -102,7 +102,7 @@ try {
 
 ### Scopes
 
-Scopes enable your application to only request access to the resources it needs while enabling users to control the amount of access they grant to your application. Available scopes are defined in the [`OAuthScope`](../../doc/models/o-auth-scope.md) enumeration.
+Scopes enable your application to only request access to the resources it needs while enabling users to control the amount of access they grant to your application. Available scopes are defined in the [`OauthScope`](../../doc/models/oauth-scope.md) enumeration.
 
 | Scope Name | Description |
 |  --- | --- |
@@ -185,7 +185,7 @@ if (client.getAuthorizationCodeAuth().isTokenExpired()) {
         // re-instantiate the client with oauth token
         client = client.newBuilder()
                 .authorizationCodeAuth(client.getAuthorizationCodeAuthModel().toBuilder()
-                        .oAuthToken(token)
+                        .oauthToken(token)
                         .build())
                 .build();
     } catch (Throwable e) {
@@ -202,7 +202,7 @@ It is recommended that you store the access token for reuse.
 
 ```java
 // store token
-httpSession.setAttribute("access_token", client.getAuthorizationCodeAuth().getOAuthToken());
+httpSession.setAttribute("access_token", client.getAuthorizationCodeAuth().getOauthToken());
 ```
 
 ### Creating a client from a stored token
@@ -211,12 +211,12 @@ To authorize a client using a stored access token, just set the access token in 
 
 ```java
 // load token later...
-OAuthToken token = (OAuthToken) httpSession.getAttribute("access_token");
+OauthToken token = (OauthToken) httpSession.getAttribute("access_token");
 
 // re-instantiate the client with oauth token
 client = client.newBuilder()
         .authorizationCodeAuth(client.getAuthorizationCodeAuthModel().toBuilder()
-                .oAuthToken(token)
+                .oauthToken(token)
                 .build())
         .build();
 ```
@@ -237,8 +237,8 @@ package com.example;
 import com.slack.SlackWebApiClient;
 import com.slack.authentication.AuthorizationCodeAuthModel;
 import com.slack.http.client.LoggingConfiguration.Level;
-import com.slack.models.OAuthScope;
-import com.slack.models.OAuthToken;
+import com.slack.models.OauthScope;
+import com.slack.models.OauthToken;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.util.Arrays;
@@ -259,9 +259,9 @@ public class MainController {
                     "OAuthClientSecret",
                     "OAuthRedirectUri"
                 )
-                .oAuthScopes(Arrays.asList(
-                        OAuthScope.ADMIN,
-                        OAuthScope.ADMIN_APPSREAD
+                .oauthScopes(Arrays.asList(
+                        OauthScope.ADMIN,
+                        OauthScope.ADMIN_APPSREAD
                     ))
                 .build())
             .build();
@@ -278,19 +278,19 @@ public class MainController {
         synchronized (client) {
             client = client.newBuilder()
                     .authorizationCodeAuth(client.getAuthorizationCodeAuthModel().toBuilder()
-                            .oAuthToken((OAuthToken) session.getAttribute("access_token"))
+                            .oauthToken((OauthToken) session.getAttribute("access_token"))
                             .build())
                     .build();
 
             // refresh the token if it is expired
             if(client.getAuthorizationCodeAuth().isTokenExpired()) {
                 try {
-                    OAuthToken token = client.getAuthorizationCodeAuth().refreshToken();
+                    OauthToken token = client.getAuthorizationCodeAuth().refreshToken();
                     session.setAttribute("access_token", token);
                     // re-instantiate the client with oauth token
                     client = client.newBuilder()
                             .authorizationCodeAuth(client.getAuthorizationCodeAuthModel().toBuilder()
-                                    .oAuthToken(token)
+                                    .oauthToken(token)
                                     .build())
                             .build();
                 } catch (Throwable e) {
@@ -317,14 +317,14 @@ public class MainController {
             // if authorization code is absent, redirect to authorization page
             response.sendRedirect(authUrl);
         } else {
-            OAuthToken token;
+            OauthToken token;
             
             synchronized (client) {
                 token = client.getAuthorizationCodeAuth().fetchToken(code);
                 // re-instantiate the client with oauth token
                 client = client.newBuilder()
                         .authorizationCodeAuth(client.getAuthorizationCodeAuthModel().toBuilder()
-                                .oAuthToken(token)
+                                .oauthToken(token)
                                 .build())
                         .build();
             }

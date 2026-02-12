@@ -14,7 +14,7 @@ Schema for error response from team.profile.get method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error81`](../../doc/models/error-81.md) | Required | - | Error81 getError() | setError(Error81 error) |
+| `Error` | [`TeamProfileGetErrorEnum`](../../doc/models/team-profile-get-error-enum.md) | Required | - | TeamProfileGetErrorEnum getError() | setError(TeamProfileGetErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

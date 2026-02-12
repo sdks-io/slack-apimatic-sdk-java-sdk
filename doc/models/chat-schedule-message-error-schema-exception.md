@@ -14,7 +14,7 @@ Schema for error response chat.scheduleMessage method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error26`](../../doc/models/error-26.md) | Required | - | Error26 getError() | setError(Error26 error) |
+| `Error` | [`ChatScheduleMessageErrorEnum`](../../doc/models/chat-schedule-message-error-enum.md) | Required | - | ChatScheduleMessageErrorEnum getError() | setError(ChatScheduleMessageErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

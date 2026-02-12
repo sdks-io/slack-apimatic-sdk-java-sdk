@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error31;
+import com.slack.models.ConversationsCloseErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ConversationsCloseErrorSchemaException type.
  */
 public class ConversationsCloseErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -879694918841853981L;
+    private static final long serialVersionUID = -863474183813945672L;
     private String callstack;
-    private Error31 error;
+    private ConversationsCloseErrorEnum error;
     private String needed;
     private String ok;
     private String provided;
@@ -54,19 +54,19 @@ public class ConversationsCloseErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error31
+     * @return Returns the ConversationsCloseErrorEnum
      */
     @JsonGetter("error")
-    public Error31 getError() {
+    public ConversationsCloseErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error31
+     * @param error Value for ConversationsCloseErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error31 error) {
+    private void setError(ConversationsCloseErrorEnum error) {
         this.error = error;
     }
 

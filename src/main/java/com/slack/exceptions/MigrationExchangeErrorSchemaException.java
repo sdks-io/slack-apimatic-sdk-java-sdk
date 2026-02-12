@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error61;
+import com.slack.models.MigrationExchangeErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for MigrationExchangeErrorSchemaException type.
  */
 public class MigrationExchangeErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -2471809916675275815L;
+    private static final long serialVersionUID = -2471889369300767000L;
     private String callstack;
-    private Error61 error;
+    private MigrationExchangeErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class MigrationExchangeErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error61
+     * @return Returns the MigrationExchangeErrorEnum
      */
     @JsonGetter("error")
-    public Error61 getError() {
+    public MigrationExchangeErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error61
+     * @param error Value for MigrationExchangeErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error61 error) {
+    private void setError(MigrationExchangeErrorEnum error) {
         this.error = error;
     }
 

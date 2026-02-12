@@ -14,7 +14,7 @@ Schema for error response from conversations.list method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error40`](../../doc/models/error-40.md) | Required | - | Error40 getError() | setError(Error40 error) |
+| `Error` | [`ConversationsListErrorEnum`](../../doc/models/conversations-list-error-enum.md) | Required | - | ConversationsListErrorEnum getError() | setError(ConversationsListErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

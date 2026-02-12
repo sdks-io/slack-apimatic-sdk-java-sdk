@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error59;
+import com.slack.models.FilesSharedPublicUrlErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for FilesSharedPublicUrlErrorSchemaException type.
  */
 public class FilesSharedPublicUrlErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -1876114453550915621L;
+    private static final long serialVersionUID = -1876055362395760136L;
     private String callstack;
-    private Error59 error;
+    private FilesSharedPublicUrlErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class FilesSharedPublicUrlErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error59
+     * @return Returns the FilesSharedPublicUrlErrorEnum
      */
     @JsonGetter("error")
-    public Error59 getError() {
+    public FilesSharedPublicUrlErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error59
+     * @param error Value for FilesSharedPublicUrlErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error59 error) {
+    private void setError(FilesSharedPublicUrlErrorEnum error) {
         this.error = error;
     }
 

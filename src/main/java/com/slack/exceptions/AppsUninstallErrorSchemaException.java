@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error16;
+import com.slack.models.AppsUninstallErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AppsUninstallErrorSchemaException type.
  */
 public class AppsUninstallErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 1074026515189850360L;
+    private static final long serialVersionUID = 1074007683490871016L;
     private String callstack;
-    private Error16 error;
+    private AppsUninstallErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class AppsUninstallErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error16
+     * @return Returns the AppsUninstallErrorEnum
      */
     @JsonGetter("error")
-    public Error16 getError() {
+    public AppsUninstallErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error16
+     * @param error Value for AppsUninstallErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error16 error) {
+    private void setError(AppsUninstallErrorEnum error) {
         this.error = error;
     }
 

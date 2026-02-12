@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.invite
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error7`](../../doc/models/error-7.md) | Required | - | Error7 getError() | setError(Error7 error) |
+| `Error` | [`AdminConversationsInviteErrorEnum`](../../doc/models/admin-conversations-invite-error-enum.md) | Required | - | AdminConversationsInviteErrorEnum getError() | setError(AdminConversationsInviteErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

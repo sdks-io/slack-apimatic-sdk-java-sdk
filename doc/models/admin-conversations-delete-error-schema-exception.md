@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.delete
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error3`](../../doc/models/error-3.md) | Required | - | Error3 getError() | setError(Error3 error) |
+| `Error` | [`AdminConversationsDeleteErrorEnum`](../../doc/models/admin-conversations-delete-error-enum.md) | Required | - | AdminConversationsDeleteErrorEnum getError() | setError(AdminConversationsDeleteErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

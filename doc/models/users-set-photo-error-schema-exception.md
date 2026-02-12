@@ -16,7 +16,7 @@ Schema for error response from users.setPhoto method
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
 | `DebugStep` | `String` | Optional | possibly DEV/QA only | String getDebugStep() | setDebugStep(String debugStep) |
 | `Dims` | `String` | Optional | possibly DEV/QA only | String getDims() | setDims(String dims) |
-| `Error` | [`Error98`](../../doc/models/error-98.md) | Required | - | Error98 getError() | setError(Error98 error) |
+| `Error` | [`UsersSetPhotoErrorEnum`](../../doc/models/users-set-photo-error-enum.md) | Required | - | UsersSetPhotoErrorEnum getError() | setError(UsersSetPhotoErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `TimeIdent` | `Integer` | Optional | possibly DEV/QA only | Integer getTimeIdent() | setTimeIdent(Integer timeIdent) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |

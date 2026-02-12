@@ -14,7 +14,7 @@ Schema for error response from users.profile.set method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error96`](../../doc/models/error-96.md) | Required | - | Error96 getError() | setError(Error96 error) |
+| `Error` | [`UsersProfileSetErrorEnum`](../../doc/models/users-profile-set-error-enum.md) | Required | - | UsersProfileSetErrorEnum getError() | setError(UsersProfileSetErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error19;
+import com.slack.models.BotsInfoErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for BotsInfoErrorSchemaException type.
  */
 public class BotsInfoErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -3446161103651720075L;
+    private static final long serialVersionUID = 3446249472813331608L;
     private String callstack;
-    private Error19 error;
+    private BotsInfoErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class BotsInfoErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error19
+     * @return Returns the BotsInfoErrorEnum
      */
     @JsonGetter("error")
-    public Error19 getError() {
+    public BotsInfoErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error19
+     * @param error Value for BotsInfoErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error19 error) {
+    private void setError(BotsInfoErrorEnum error) {
         this.error = error;
     }
 

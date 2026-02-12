@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error52;
+import com.slack.models.DndInfoErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for DndInfoErrorSchemaException type.
  */
 public class DndInfoErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 3015496447221962432L;
+    private static final long serialVersionUID = 3015354355711676512L;
     private String callstack;
-    private Error52 error;
+    private DndInfoErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class DndInfoErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error52
+     * @return Returns the DndInfoErrorEnum
      */
     @JsonGetter("error")
-    public Error52 getError() {
+    public DndInfoErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error52
+     * @param error Value for DndInfoErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error52 error) {
+    private void setError(DndInfoErrorEnum error) {
         this.error = error;
     }
 

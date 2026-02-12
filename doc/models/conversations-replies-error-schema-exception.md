@@ -14,7 +14,7 @@ Schema for error response from conversations.replies method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error45`](../../doc/models/error-45.md) | Required | - | Error45 getError() | setError(Error45 error) |
+| `Error` | [`ConversationsRepliesErrorEnum`](../../doc/models/conversations-replies-error-enum.md) | Required | - | ConversationsRepliesErrorEnum getError() | setError(ConversationsRepliesErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

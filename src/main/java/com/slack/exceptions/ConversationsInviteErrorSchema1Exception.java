@@ -8,7 +8,7 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error35;
+import com.slack.models.ConversationsInviteErrorEnum;
 import com.slack.models.ErrorsIsReturnedWhenAnErrorAssociatesAnUser;
 import io.apimatic.coreinterfaces.http.Context;
 import java.util.List;
@@ -17,9 +17,9 @@ import java.util.List;
  * This is a model class for ConversationsInviteErrorSchema1Exception type.
  */
 public class ConversationsInviteErrorSchema1Exception extends ApiException {
-    private static final long serialVersionUID = 7676336475508660902L;
+    private static final long serialVersionUID = 188139954660275952L;
     private String callstack;
-    private Error35 error;
+    private ConversationsInviteErrorEnum error;
     private List<ErrorsIsReturnedWhenAnErrorAssociatesAnUser> errors;
     private String needed;
     private String ok;
@@ -57,19 +57,19 @@ public class ConversationsInviteErrorSchema1Exception extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error35
+     * @return Returns the ConversationsInviteErrorEnum
      */
     @JsonGetter("error")
-    public Error35 getError() {
+    public ConversationsInviteErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error35
+     * @param error Value for ConversationsInviteErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error35 error) {
+    private void setError(ConversationsInviteErrorEnum error) {
         this.error = error;
     }
 

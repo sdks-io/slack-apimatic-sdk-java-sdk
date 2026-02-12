@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error69;
+import com.slack.models.RemindersAddErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for RemindersAddErrorSchemaException type.
  */
 public class RemindersAddErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 8326593684583037960L;
+    private static final long serialVersionUID = 8326703815923584020L;
     private String callstack;
-    private Error69 error;
+    private RemindersAddErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class RemindersAddErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error69
+     * @return Returns the RemindersAddErrorEnum
      */
     @JsonGetter("error")
-    public Error69 getError() {
+    public RemindersAddErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error69
+     * @param error Value for RemindersAddErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error69 error) {
+    private void setError(RemindersAddErrorEnum error) {
         this.error = error;
     }
 

@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error99;
+import com.slack.models.UsersSetPresenceErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for UsersSetPresenceErrorSchemaException type.
  */
 public class UsersSetPresenceErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 5783819293232300300L;
+    private static final long serialVersionUID = 5783917639643656920L;
     private String callstack;
-    private Error99 error;
+    private UsersSetPresenceErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class UsersSetPresenceErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error99
+     * @return Returns the UsersSetPresenceErrorEnum
      */
     @JsonGetter("error")
-    public Error99 getError() {
+    public UsersSetPresenceErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error99
+     * @param error Value for UsersSetPresenceErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error99 error) {
+    private void setError(UsersSetPresenceErrorEnum error) {
         this.error = error;
     }
 

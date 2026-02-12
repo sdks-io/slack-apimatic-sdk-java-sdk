@@ -14,7 +14,7 @@ Schema for error response from conversations.rename method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error44`](../../doc/models/error-44.md) | Required | - | Error44 getError() | setError(Error44 error) |
+| `Error` | [`ConversationsRenameErrorEnum`](../../doc/models/conversations-rename-error-enum.md) | Required | - | ConversationsRenameErrorEnum getError() | setError(ConversationsRenameErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

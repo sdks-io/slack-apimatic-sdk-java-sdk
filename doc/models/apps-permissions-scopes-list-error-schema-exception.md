@@ -14,7 +14,7 @@ Schema for error response from apps.permissions.scopes.list method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error12`](../../doc/models/error-12.md) | Required | - | Error12 getError() | setError(Error12 error) |
+| `Error` | [`AppsPermissionsInfoErrorEnum`](../../doc/models/apps-permissions-info-error-enum.md) | Required | - | AppsPermissionsInfoErrorEnum getError() | setError(AppsPermissionsInfoErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

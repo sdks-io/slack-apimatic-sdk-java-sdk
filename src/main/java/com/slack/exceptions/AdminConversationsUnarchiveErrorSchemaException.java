@@ -8,15 +8,15 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error5;
+import com.slack.models.AdminConversationsGetConversationPrefsErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AdminConversationsUnarchiveErrorSchemaException type.
  */
 public class AdminConversationsUnarchiveErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -2721173704288943921L;
-    private Error5 error;
+    private static final long serialVersionUID = 2721007065466898001L;
+    private AdminConversationsGetConversationPrefsErrorEnum error;
     private String ok;
 
     /**
@@ -31,19 +31,19 @@ public class AdminConversationsUnarchiveErrorSchemaException extends ApiExceptio
 
     /**
      * Getter for Error.
-     * @return Returns the Error5
+     * @return Returns the AdminConversationsGetConversationPrefsErrorEnum
      */
     @JsonGetter("error")
-    public Error5 getError() {
+    public AdminConversationsGetConversationPrefsErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error5
+     * @param error Value for AdminConversationsGetConversationPrefsErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error5 error) {
+    private void setError(AdminConversationsGetConversationPrefsErrorEnum error) {
         this.error = error;
     }
 

@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error66;
+import com.slack.models.ReactionsGetErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ReactionsGetErrorSchemaException type.
  */
 public class ReactionsGetErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 7206529143893677611L;
+    private static final long serialVersionUID = -7206496442116191776L;
     private String callstack;
-    private Error66 error;
+    private ReactionsGetErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class ReactionsGetErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error66
+     * @return Returns the ReactionsGetErrorEnum
      */
     @JsonGetter("error")
-    public Error66 getError() {
+    public ReactionsGetErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error66
+     * @param error Value for ReactionsGetErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error66 error) {
+    private void setError(ReactionsGetErrorEnum error) {
         this.error = error;
     }
 

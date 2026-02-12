@@ -14,7 +14,7 @@ Schema for error response auth.test method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error18`](../../doc/models/error-18.md) | Required | - | Error18 getError() | setError(Error18 error) |
+| `Error` | [`AuthTestErrorEnum`](../../doc/models/auth-test-error-enum.md) | Required | - | AuthTestErrorEnum getError() | setError(AuthTestErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

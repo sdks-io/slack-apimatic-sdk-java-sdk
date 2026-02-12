@@ -19,7 +19,7 @@ import java.util.Map;
  * This is a model class for ErrorsIsReturnedWhenAnErrorAssociatesAnUser type.
  */
 public class ErrorsIsReturnedWhenAnErrorAssociatesAnUser {
-    private Error35 error;
+    private ConversationsInviteErrorEnum error;
     private String ok;
     private String user;
     private AdditionalProperties<Object> additionalProperties = 
@@ -34,12 +34,12 @@ public class ErrorsIsReturnedWhenAnErrorAssociatesAnUser {
 
     /**
      * Initialization constructor.
-     * @param  error  Error35 value for error.
+     * @param  error  ConversationsInviteErrorEnum value for error.
      * @param  ok  String value for ok.
      * @param  user  String value for user.
      */
     public ErrorsIsReturnedWhenAnErrorAssociatesAnUser(
-            Error35 error,
+            ConversationsInviteErrorEnum error,
             String ok,
             String user) {
         this.error = error;
@@ -49,19 +49,19 @@ public class ErrorsIsReturnedWhenAnErrorAssociatesAnUser {
 
     /**
      * Getter for Error.
-     * @return Returns the Error35
+     * @return Returns the ConversationsInviteErrorEnum
      */
     @JsonGetter("error")
-    public Error35 getError() {
+    public ConversationsInviteErrorEnum getError() {
         return error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error35
+     * @param error Value for ConversationsInviteErrorEnum
      */
     @JsonSetter("error")
-    public void setError(Error35 error) {
+    public void setError(ConversationsInviteErrorEnum error) {
         this.error = error;
     }
 
@@ -160,7 +160,7 @@ public class ErrorsIsReturnedWhenAnErrorAssociatesAnUser {
      * Class to build instances of {@link ErrorsIsReturnedWhenAnErrorAssociatesAnUser}.
      */
     public static class Builder {
-        private Error35 error;
+        private ConversationsInviteErrorEnum error;
         private String ok = "False";
         private String user;
         private AdditionalProperties<Object> additionalProperties =
@@ -174,20 +174,20 @@ public class ErrorsIsReturnedWhenAnErrorAssociatesAnUser {
 
         /**
          * Initialization constructor.
-         * @param  error  Error35 value for error.
+         * @param  error  ConversationsInviteErrorEnum value for error.
          * @param  ok  String value for ok.
          */
-        public Builder(Error35 error, String ok) {
+        public Builder(ConversationsInviteErrorEnum error, String ok) {
             this.error = error;
             this.ok = ok;
         }
 
         /**
          * Setter for error.
-         * @param  error  Error35 value for error.
+         * @param  error  ConversationsInviteErrorEnum value for error.
          * @return Builder
          */
-        public Builder error(Error35 error) {
+        public Builder error(ConversationsInviteErrorEnum error) {
             this.error = error;
             return this;
         }

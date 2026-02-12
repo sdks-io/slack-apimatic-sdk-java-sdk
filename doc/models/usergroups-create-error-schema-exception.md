@@ -14,7 +14,7 @@ Schema for error response from usergroups.create method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error82`](../../doc/models/error-82.md) | Required | - | Error82 getError() | setError(Error82 error) |
+| `Error` | [`UsergroupsCreateErrorEnum`](../../doc/models/usergroups-create-error-enum.md) | Required | - | UsergroupsCreateErrorEnum getError() | setError(UsergroupsCreateErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

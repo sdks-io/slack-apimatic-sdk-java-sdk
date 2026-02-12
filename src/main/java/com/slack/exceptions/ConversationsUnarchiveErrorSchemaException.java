@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error48;
+import com.slack.models.ConversationsUnarchiveErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ConversationsUnarchiveErrorSchemaException type.
  */
 public class ConversationsUnarchiveErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -6723804895886578764L;
+    private static final long serialVersionUID = -6557629984770646136L;
     private String callstack;
-    private Error48 error;
+    private ConversationsUnarchiveErrorEnum error;
     private String needed;
     private String ok;
     private String provided;
@@ -54,19 +54,19 @@ public class ConversationsUnarchiveErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error48
+     * @return Returns the ConversationsUnarchiveErrorEnum
      */
     @JsonGetter("error")
-    public Error48 getError() {
+    public ConversationsUnarchiveErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error48
+     * @param error Value for ConversationsUnarchiveErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error48 error) {
+    private void setError(ConversationsUnarchiveErrorEnum error) {
         this.error = error;
     }
 

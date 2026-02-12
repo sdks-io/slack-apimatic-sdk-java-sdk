@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error64;
+import com.slack.models.PinsRemoveErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for PinsRemoveErrorSchemaException type.
  */
 public class PinsRemoveErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 4938473843379501847L;
+    private static final long serialVersionUID = 4938416422186222144L;
     private String callstack;
-    private Error64 error;
+    private PinsRemoveErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class PinsRemoveErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error64
+     * @return Returns the PinsRemoveErrorEnum
      */
     @JsonGetter("error")
-    public Error64 getError() {
+    public PinsRemoveErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error64
+     * @param error Value for PinsRemoveErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error64 error) {
+    private void setError(PinsRemoveErrorEnum error) {
         this.error = error;
     }
 

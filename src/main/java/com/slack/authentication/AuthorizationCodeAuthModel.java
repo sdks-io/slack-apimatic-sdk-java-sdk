@@ -6,70 +6,70 @@
 
 package com.slack.authentication;
 
-import com.slack.models.OAuthScope;
-import com.slack.models.OAuthToken;
+import com.slack.models.OauthScope;
+import com.slack.models.OauthToken;
 import java.util.List;
 
 /**
  * A data class for OAuth 2 Authorization Code Grant credentials.
  */
 public class AuthorizationCodeAuthModel {
-    private String oAuthClientId;
-    private String oAuthClientSecret;
-    private String oAuthRedirectUri;
-    private OAuthToken oAuthToken;
-    private List<OAuthScope> oAuthScopes;
+    private String oauthClientId;
+    private String oauthClientSecret;
+    private String oauthRedirectUri;
+    private OauthToken oauthToken;
+    private List<OauthScope> oauthScopes;
 
     /**
      * A Constructor for AuthorizationCodeAuthModel.
      */
-    private AuthorizationCodeAuthModel(String oAuthClientId, String oAuthClientSecret,
-            String oAuthRedirectUri, OAuthToken oAuthToken, List<OAuthScope> oAuthScopes) {
-        this.oAuthClientId = oAuthClientId;
-        this.oAuthClientSecret = oAuthClientSecret;
-        this.oAuthRedirectUri = oAuthRedirectUri;
-        this.oAuthToken = oAuthToken;
-        this.oAuthScopes = oAuthScopes;
+    private AuthorizationCodeAuthModel(String oauthClientId, String oauthClientSecret,
+            String oauthRedirectUri, OauthToken oauthToken, List<OauthScope> oauthScopes) {
+        this.oauthClientId = oauthClientId;
+        this.oauthClientSecret = oauthClientSecret;
+        this.oauthRedirectUri = oauthRedirectUri;
+        this.oauthToken = oauthToken;
+        this.oauthScopes = oauthScopes;
     }
 
     /**
-     * Getter for oAuthClientId.
-     * @return oAuthClientId The value of OAuthClientId.
+     * Getter for oauthClientId.
+     * @return oauthClientId The value of OAuthClientId.
      */
-    public String getOAuthClientId() {
-        return this.oAuthClientId;
+    public String getOauthClientId() {
+        return this.oauthClientId;
     }
 
     /**
-     * Getter for oAuthClientSecret.
-     * @return oAuthClientSecret The value of OAuthClientSecret.
+     * Getter for oauthClientSecret.
+     * @return oauthClientSecret The value of OAuthClientSecret.
      */
-    public String getOAuthClientSecret() {
-        return this.oAuthClientSecret;
+    public String getOauthClientSecret() {
+        return this.oauthClientSecret;
     }
 
     /**
-     * Getter for oAuthRedirectUri.
-     * @return oAuthRedirectUri The value of OAuthRedirectUri.
+     * Getter for oauthRedirectUri.
+     * @return oauthRedirectUri The value of OAuthRedirectUri.
      */
-    public String getOAuthRedirectUri() {
-        return this.oAuthRedirectUri;
+    public String getOauthRedirectUri() {
+        return this.oauthRedirectUri;
     }
 
     /**
-     * Getter for oAuthToken.
-     * @return oAuthToken The value of OAuthToken.
+     * Getter for oauthToken.
+     * @return oauthToken The value of OAuthToken.
      */
-    public OAuthToken getOAuthToken() {
-        return this.oAuthToken;
+    public OauthToken getOauthToken() {
+        return this.oauthToken;
     }
 
     /**
-     * Getter for oAuthScopes.
-     * @return oAuthScopes The value of OAuthScopes.
+     * Getter for oauthScopes.
+     * @return oauthScopes The value of OAuthScopes.
      */
-    public List<OAuthScope> getOAuthScopes() {
-        return this.oAuthScopes;
+    public List<OauthScope> getOauthScopes() {
+        return this.oauthScopes;
     }
 
     /**
@@ -78,104 +78,104 @@ public class AuthorizationCodeAuthModel {
      * @return a new {@link AuthorizationCodeAuthModel.Builder} object.
      */
     public Builder toBuilder() {
-        return new Builder(getOAuthClientId(), getOAuthClientSecret(), getOAuthRedirectUri())
-            .oAuthToken(getOAuthToken())
-            .oAuthScopes(getOAuthScopes());
+        return new Builder(getOauthClientId(), getOauthClientSecret(), getOauthRedirectUri())
+            .oauthToken(getOauthToken())
+            .oauthScopes(getOauthScopes());
     }
 
     /**
      * A Builder class for OAuth 2 Authorization Code Grant credentials.
      */
     public static class Builder {
-        private String oAuthClientId;
-        private String oAuthClientSecret;
-        private String oAuthRedirectUri;
-        private OAuthToken oAuthToken;
-        private List<OAuthScope> oAuthScopes;
+        private String oauthClientId;
+        private String oauthClientSecret;
+        private String oauthRedirectUri;
+        private OauthToken oauthToken;
+        private List<OauthScope> oauthScopes;
 
         /**
          * The constructor with required auth credentials.
-         * @param oAuthClientId The value of OAuthClientId.
-         * @param oAuthClientSecret The value of OAuthClientSecret.
-         * @param oAuthRedirectUri The value of OAuthRedirectUri.
+         * @param oauthClientId The value of OauthClientId.
+         * @param oauthClientSecret The value of OauthClientSecret.
+         * @param oauthRedirectUri The value of OauthRedirectUri.
          */
-        public Builder(String oAuthClientId, String oAuthClientSecret, String oAuthRedirectUri) {
-            if (oAuthClientId == null) {
-                throw new NullPointerException("OAuthClientId cannot be null.");
+        public Builder(String oauthClientId, String oauthClientSecret, String oauthRedirectUri) {
+            if (oauthClientId == null) {
+                throw new NullPointerException("OauthClientId cannot be null.");
             }
 
-            if (oAuthClientSecret == null) {
-                throw new NullPointerException("OAuthClientSecret cannot be null.");
+            if (oauthClientSecret == null) {
+                throw new NullPointerException("OauthClientSecret cannot be null.");
             }
 
-            if (oAuthRedirectUri == null) {
-                throw new NullPointerException("OAuthRedirectUri cannot be null.");
+            if (oauthRedirectUri == null) {
+                throw new NullPointerException("OauthRedirectUri cannot be null.");
             }
 
-            this.oAuthClientId = oAuthClientId;
-            this.oAuthClientSecret = oAuthClientSecret;
-            this.oAuthRedirectUri = oAuthRedirectUri;
+            this.oauthClientId = oauthClientId;
+            this.oauthClientSecret = oauthClientSecret;
+            this.oauthRedirectUri = oauthRedirectUri;
         }
 
         /**
-         * Setter for oAuthClientId.
-         * @param oAuthClientId The value of OAuthClientId.
+         * Setter for oauthClientId.
+         * @param oauthClientId The value of OAuthClientId.
          * @return Builder The current instance of Builder.
          */
-        public Builder oAuthClientId(String oAuthClientId) {
-            if (oAuthClientId == null) {
-                throw new NullPointerException("OAuthClientId cannot be null.");
+        public Builder oauthClientId(String oauthClientId) {
+            if (oauthClientId == null) {
+                throw new NullPointerException("OauthClientId cannot be null.");
             }
 
-            this.oAuthClientId = oAuthClientId;
+            this.oauthClientId = oauthClientId;
             return this;
         }
 
         /**
-         * Setter for oAuthClientSecret.
-         * @param oAuthClientSecret The value of OAuthClientSecret.
+         * Setter for oauthClientSecret.
+         * @param oauthClientSecret The value of OAuthClientSecret.
          * @return Builder The current instance of Builder.
          */
-        public Builder oAuthClientSecret(String oAuthClientSecret) {
-            if (oAuthClientSecret == null) {
-                throw new NullPointerException("OAuthClientSecret cannot be null.");
+        public Builder oauthClientSecret(String oauthClientSecret) {
+            if (oauthClientSecret == null) {
+                throw new NullPointerException("OauthClientSecret cannot be null.");
             }
 
-            this.oAuthClientSecret = oAuthClientSecret;
+            this.oauthClientSecret = oauthClientSecret;
             return this;
         }
 
         /**
-         * Setter for oAuthRedirectUri.
-         * @param oAuthRedirectUri The value of OAuthRedirectUri.
+         * Setter for oauthRedirectUri.
+         * @param oauthRedirectUri The value of OAuthRedirectUri.
          * @return Builder The current instance of Builder.
          */
-        public Builder oAuthRedirectUri(String oAuthRedirectUri) {
-            if (oAuthRedirectUri == null) {
-                throw new NullPointerException("OAuthRedirectUri cannot be null.");
+        public Builder oauthRedirectUri(String oauthRedirectUri) {
+            if (oauthRedirectUri == null) {
+                throw new NullPointerException("OauthRedirectUri cannot be null.");
             }
 
-            this.oAuthRedirectUri = oAuthRedirectUri;
+            this.oauthRedirectUri = oauthRedirectUri;
             return this;
         }
 
         /**
-         * Setter for oAuthToken.
-         * @param oAuthToken The value of OAuthToken.
+         * Setter for oauthToken.
+         * @param oauthToken The value of OAuthToken.
          * @return Builder The current instance of Builder.
          */
-        public Builder oAuthToken(OAuthToken oAuthToken) {
-            this.oAuthToken = oAuthToken;
+        public Builder oauthToken(OauthToken oauthToken) {
+            this.oauthToken = oauthToken;
             return this;
         }
 
         /**
-         * Setter for oAuthScopes.
-         * @param oAuthScopes The value of OAuthScopes.
+         * Setter for oauthScopes.
+         * @param oauthScopes The value of OAuthScopes.
          * @return Builder The current instance of Builder.
          */
-        public Builder oAuthScopes(List<OAuthScope> oAuthScopes) {
-            this.oAuthScopes = oAuthScopes;
+        public Builder oauthScopes(List<OauthScope> oauthScopes) {
+            this.oauthScopes = oauthScopes;
             return this;
         }
 
@@ -184,8 +184,8 @@ public class AuthorizationCodeAuthModel {
          * @return The instance of AuthorizationCodeAuthModel.
          */
         public AuthorizationCodeAuthModel build() {
-            return new AuthorizationCodeAuthModel(oAuthClientId, oAuthClientSecret,
-                    oAuthRedirectUri, oAuthToken, oAuthScopes);
+            return new AuthorizationCodeAuthModel(oauthClientId, oauthClientSecret,
+                    oauthRedirectUri, oauthToken, oauthScopes);
         }
     }
 }

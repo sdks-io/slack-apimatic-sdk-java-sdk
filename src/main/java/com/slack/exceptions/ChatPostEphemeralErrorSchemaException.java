@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error24;
+import com.slack.models.ChatPostEphemeralErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ChatPostEphemeralErrorSchemaException type.
  */
 public class ChatPostEphemeralErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 2625114764724927558L;
+    private static final long serialVersionUID = -2625102520705784240L;
     private String callstack;
-    private Error24 error;
+    private ChatPostEphemeralErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class ChatPostEphemeralErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error24
+     * @return Returns the ChatPostEphemeralErrorEnum
      */
     @JsonGetter("error")
-    public Error24 getError() {
+    public ChatPostEphemeralErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error24
+     * @param error Value for ChatPostEphemeralErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error24 error) {
+    private void setError(ChatPostEphemeralErrorEnum error) {
         this.error = error;
     }
 

@@ -8,15 +8,15 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error9;
+import com.slack.models.AdminConversationsSearchErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AdminConversationsSearchErrorSchemaException type.
  */
 public class AdminConversationsSearchErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -5246585193026292498L;
-    private Error9 error;
+    private static final long serialVersionUID = 5246493920128222393L;
+    private AdminConversationsSearchErrorEnum error;
     private String ok;
 
     /**
@@ -31,19 +31,19 @@ public class AdminConversationsSearchErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error9
+     * @return Returns the AdminConversationsSearchErrorEnum
      */
     @JsonGetter("error")
-    public Error9 getError() {
+    public AdminConversationsSearchErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error9
+     * @param error Value for AdminConversationsSearchErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error9 error) {
+    private void setError(AdminConversationsSearchErrorEnum error) {
         this.error = error;
     }
 

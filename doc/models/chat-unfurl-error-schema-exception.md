@@ -14,7 +14,7 @@ Schema for error response from chat.unfurl method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error28`](../../doc/models/error-28.md) | Required | - | Error28 getError() | setError(Error28 error) |
+| `Error` | [`ChatUnfurlErrorEnum`](../../doc/models/chat-unfurl-error-enum.md) | Required | - | ChatUnfurlErrorEnum getError() | setError(ChatUnfurlErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

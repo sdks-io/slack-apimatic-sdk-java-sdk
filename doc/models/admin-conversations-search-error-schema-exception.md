@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.search
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error9`](../../doc/models/error-9.md) | Required | - | Error9 getError() | setError(Error9 error) |
+| `Error` | [`AdminConversationsSearchErrorEnum`](../../doc/models/admin-conversations-search-error-enum.md) | Required | - | AdminConversationsSearchErrorEnum getError() | setError(AdminConversationsSearchErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

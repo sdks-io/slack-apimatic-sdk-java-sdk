@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.unarchive
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error11`](../../doc/models/error-11.md) | Required | - | Error11 getError() | setError(Error11 error) |
+| `Error` | [`AdminConversationsUnarchiveErrorEnum`](../../doc/models/admin-conversations-unarchive-error-enum.md) | Required | - | AdminConversationsUnarchiveErrorEnum getError() | setError(AdminConversationsUnarchiveErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

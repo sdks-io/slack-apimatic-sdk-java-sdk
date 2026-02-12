@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error21;
+import com.slack.models.ChatDeleteScheduledMessageErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for ChatDeleteScheduledMessageErrorSchemaException type.
  */
 public class ChatDeleteScheduledMessageErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 931075128977459175L;
+    private static final long serialVersionUID = 930993147680227456L;
     private String callstack;
-    private Error21 error;
+    private ChatDeleteScheduledMessageErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class ChatDeleteScheduledMessageErrorSchemaException extends ApiException
 
     /**
      * Getter for Error.
-     * @return Returns the Error21
+     * @return Returns the ChatDeleteScheduledMessageErrorEnum
      */
     @JsonGetter("error")
-    public Error21 getError() {
+    public ChatDeleteScheduledMessageErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error21
+     * @param error Value for ChatDeleteScheduledMessageErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error21 error) {
+    private void setError(ChatDeleteScheduledMessageErrorEnum error) {
         this.error = error;
     }
 

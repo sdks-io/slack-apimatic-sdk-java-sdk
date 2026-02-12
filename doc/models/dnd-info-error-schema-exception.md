@@ -14,7 +14,7 @@ Schema for error response from dnd.info method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error52`](../../doc/models/error-52.md) | Required | - | Error52 getError() | setError(Error52 error) |
+| `Error` | [`DndInfoErrorEnum`](../../doc/models/dnd-info-error-enum.md) | Required | - | DndInfoErrorEnum getError() | setError(DndInfoErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

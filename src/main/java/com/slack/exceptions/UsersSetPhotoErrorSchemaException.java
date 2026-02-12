@@ -8,18 +8,18 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error98;
+import com.slack.models.UsersSetPhotoErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for UsersSetPhotoErrorSchemaException type.
  */
 public class UsersSetPhotoErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -4695062431359297033L;
+    private static final long serialVersionUID = 2415099571452134033L;
     private String callstack;
     private String debugStep;
     private String dims;
-    private Error98 error;
+    private UsersSetPhotoErrorEnum error;
     private String ok;
     private Integer timeIdent;
 
@@ -95,19 +95,19 @@ public class UsersSetPhotoErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error98
+     * @return Returns the UsersSetPhotoErrorEnum
      */
     @JsonGetter("error")
-    public Error98 getError() {
+    public UsersSetPhotoErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error98
+     * @param error Value for UsersSetPhotoErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error98 error) {
+    private void setError(UsersSetPhotoErrorEnum error) {
         this.error = error;
     }
 

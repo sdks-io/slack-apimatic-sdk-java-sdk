@@ -14,7 +14,7 @@ Schema for error response from dialog.open method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error49`](../../doc/models/error-49.md) | Required | - | Error49 getError() | setError(Error49 error) |
+| `Error` | [`DialogOpenErrorEnum`](../../doc/models/dialog-open-error-enum.md) | Required | - | DialogOpenErrorEnum getError() | setError(DialogOpenErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

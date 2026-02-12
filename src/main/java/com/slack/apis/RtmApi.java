@@ -38,10 +38,9 @@ public final class RtmApi extends BaseApi {
      * Starts a Real Time Messaging session.
      * @param  token  Required parameter: Authentication token. Requires scope: `rtm:stream`
      * @param  batchPresenceAware  Optional parameter: Batch presence deliveries via subscription.
-     *         Enabling changes the shape of `presence_change` events. See [batch
-     *         presence](/docs/presence-and-status#batching).
+     *         Enabling changes the shape of `presence_change` events.
      * @param  presenceSub  Optional parameter: Only deliver presence events when requested by
-     *         subscription. See [presence subscriptions](/docs/presence-and-status#subscriptions).
+     *         subscription
      * @return    Returns the RtmConnectSchema wrapped in ApiResponse response from the API call
      * @throws    ApiException    Represents error response from the server.
      * @throws    IOException    Signals that an I/O exception of some sort has occurred.
@@ -57,10 +56,9 @@ public final class RtmApi extends BaseApi {
      * Starts a Real Time Messaging session.
      * @param  token  Required parameter: Authentication token. Requires scope: `rtm:stream`
      * @param  batchPresenceAware  Optional parameter: Batch presence deliveries via subscription.
-     *         Enabling changes the shape of `presence_change` events. See [batch
-     *         presence](/docs/presence-and-status#batching).
+     *         Enabling changes the shape of `presence_change` events.
      * @param  presenceSub  Optional parameter: Only deliver presence events when requested by
-     *         subscription. See [presence subscriptions](/docs/presence-and-status#subscriptions).
+     *         subscription
      * @return    Returns the RtmConnectSchema wrapped in ApiResponse response from the API call
      */
     public CompletableFuture<ApiResponse<RtmConnectSchema>> rtmConnectAsync(

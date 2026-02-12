@@ -14,7 +14,7 @@ Schema for error response from apps.permissions.request method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error13`](../../doc/models/error-13.md) | Required | - | Error13 getError() | setError(Error13 error) |
+| `Error` | [`AppsPermissionsRequestErrorEnum`](../../doc/models/apps-permissions-request-error-enum.md) | Required | - | AppsPermissionsRequestErrorEnum getError() | setError(AppsPermissionsRequestErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

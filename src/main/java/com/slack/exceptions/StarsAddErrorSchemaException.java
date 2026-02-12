@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error75;
+import com.slack.models.StarsAddErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for StarsAddErrorSchemaException type.
  */
 public class StarsAddErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 2722090130957317713L;
+    private static final long serialVersionUID = -2722357847287205676L;
     private String callstack;
-    private Error75 error;
+    private StarsAddErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class StarsAddErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error75
+     * @return Returns the StarsAddErrorEnum
      */
     @JsonGetter("error")
-    public Error75 getError() {
+    public StarsAddErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error75
+     * @param error Value for StarsAddErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error75 error) {
+    private void setError(StarsAddErrorEnum error) {
         this.error = error;
     }
 

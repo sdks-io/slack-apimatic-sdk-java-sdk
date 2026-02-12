@@ -169,7 +169,7 @@ CompletableFuture<ApiResponse<DefaultSuccessTemplate>> filesRemoteListAsync(
 | `tsFrom` | `Double` | Query, Optional | Filter files created after this timestamp (inclusive). |
 | `tsTo` | `Double` | Query, Optional | Filter files created before this timestamp (inclusive). |
 | `limit` | `Integer` | Query, Optional | The maximum number of items to return. |
-| `cursor` | `String` | Query, Optional | Paginate through collections of data by setting the `cursor` parameter to a `next_cursor` attribute returned by a previous request's `response_metadata`. Default value fetches the first "page" of the collection. See [pagination](/docs/pagination) for more detail. |
+| `cursor` | `String` | Query, Optional | Paginate through collections of data by setting the `cursor` parameter to a `next_cursor` attribute returned by a previous request's `response_metadata`. Default value fetches the first "page" of the collection. |
 
 ## Requires scope
 

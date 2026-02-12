@@ -14,7 +14,7 @@ Schema for error response from chat.delete method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error20`](../../doc/models/error-20.md) | Required | - | Error20 getError() | setError(Error20 error) |
+| `Error` | [`ChatDeleteErrorEnum`](../../doc/models/chat-delete-error-enum.md) | Required | - | ChatDeleteErrorEnum getError() | setError(ChatDeleteErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

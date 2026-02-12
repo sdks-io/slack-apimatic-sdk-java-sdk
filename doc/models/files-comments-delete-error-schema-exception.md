@@ -14,7 +14,7 @@ Schema for error response files.comments.delete method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error54`](../../doc/models/error-54.md) | Required | - | Error54 getError() | setError(Error54 error) |
+| `Error` | [`FilesCommentsDeleteErrorEnum`](../../doc/models/files-comments-delete-error-enum.md) | Required | - | FilesCommentsDeleteErrorEnum getError() | setError(FilesCommentsDeleteErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

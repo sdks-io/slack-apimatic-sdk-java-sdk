@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error94;
+import com.slack.models.UsersLookupByEmailErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for UsersLookupByEmailErrorSchemaException type.
  */
 public class UsersLookupByEmailErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = -4731343328865782813L;
+    private static final long serialVersionUID = 4731269592078653760L;
     private String callstack;
-    private Error94 error;
+    private UsersLookupByEmailErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class UsersLookupByEmailErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error94
+     * @return Returns the UsersLookupByEmailErrorEnum
      */
     @JsonGetter("error")
-    public Error94 getError() {
+    public UsersLookupByEmailErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error94
+     * @param error Value for UsersLookupByEmailErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error94 error) {
+    private void setError(UsersLookupByEmailErrorEnum error) {
         this.error = error;
     }
 

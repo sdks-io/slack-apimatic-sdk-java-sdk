@@ -14,7 +14,7 @@ Schema for error response from users.info method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | - | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error92`](../../doc/models/error-92.md) | Required | - | Error92 getError() | setError(Error92 error) |
+| `Error` | [`UsersInfoErrorEnum`](../../doc/models/users-info-error-enum.md) | Required | - | UsersInfoErrorEnum getError() | setError(UsersInfoErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

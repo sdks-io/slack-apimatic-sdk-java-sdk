@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.create
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error2`](../../doc/models/error-2.md) | Required | - | Error2 getError() | setError(Error2 error) |
+| `Error` | [`AdminConversationsCreateErrorEnum`](../../doc/models/admin-conversations-create-error-enum.md) | Required | - | AdminConversationsCreateErrorEnum getError() | setError(AdminConversationsCreateErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

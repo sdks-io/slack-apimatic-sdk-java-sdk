@@ -15,7 +15,7 @@ Schema for error response from conversations.create method
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
 | `Detail` | `String` | Optional | - | String getDetail() | setDetail(String detail) |
-| `Error` | [`Error32`](../../doc/models/error-32.md) | Required | - | Error32 getError() | setError(Error32 error) |
+| `Error` | [`ConversationsCreateErrorEnum`](../../doc/models/conversations-create-error-enum.md) | Required | - | ConversationsCreateErrorEnum getError() | setError(ConversationsCreateErrorEnum error) |
 | `Needed` | `String` | Optional | - | String getNeeded() | setNeeded(String needed) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `Provided` | `String` | Optional | - | String getProvided() | setProvided(String provided) |

@@ -8,15 +8,15 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error4;
+import com.slack.models.AdminConversationsDisconnectSharedErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AdminConversationsDisconnectSharedErrorSchemaException type.
  */
 public class AdminConversationsDisconnectSharedErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 4036860577800575690L;
-    private Error4 error;
+    private static final long serialVersionUID = 4036836651133128785L;
+    private AdminConversationsDisconnectSharedErrorEnum error;
     private String ok;
 
     /**
@@ -31,19 +31,19 @@ public class AdminConversationsDisconnectSharedErrorSchemaException extends ApiE
 
     /**
      * Getter for Error.
-     * @return Returns the Error4
+     * @return Returns the AdminConversationsDisconnectSharedErrorEnum
      */
     @JsonGetter("error")
-    public Error4 getError() {
+    public AdminConversationsDisconnectSharedErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error4
+     * @param error Value for AdminConversationsDisconnectSharedErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error4 error) {
+    private void setError(AdminConversationsDisconnectSharedErrorEnum error) {
         this.error = error;
     }
 

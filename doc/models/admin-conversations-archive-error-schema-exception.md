@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.archive
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error`](../../doc/models/error.md) | Required | - | Error getError() | setError(Error error) |
+| `Error` | [`AdminConversationsArchiveErrorEnum`](../../doc/models/admin-conversations-archive-error-enum.md) | Required | - | AdminConversationsArchiveErrorEnum getError() | setError(AdminConversationsArchiveErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

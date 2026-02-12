@@ -14,7 +14,7 @@ Schema for error response from reactions.add method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error65`](../../doc/models/error-65.md) | Required | - | Error65 getError() | setError(Error65 error) |
+| `Error` | [`ReactionsAddErrorEnum`](../../doc/models/reactions-add-error-enum.md) | Required | - | ReactionsAddErrorEnum getError() | setError(ReactionsAddErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

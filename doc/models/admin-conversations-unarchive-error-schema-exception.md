@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.getConversationPrefs
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Error` | [`Error5`](../../doc/models/error-5.md) | Required | - | Error5 getError() | setError(Error5 error) |
+| `Error` | [`AdminConversationsGetConversationPrefsErrorEnum`](../../doc/models/admin-conversations-get-conversation-prefs-error-enum.md) | Required | - | AdminConversationsGetConversationPrefsErrorEnum getError() | setError(AdminConversationsGetConversationPrefsErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

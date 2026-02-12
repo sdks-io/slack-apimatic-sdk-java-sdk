@@ -14,7 +14,7 @@ Schema for error response from chat.meMessage method
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
 | `Callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa | String getCallstack() | setCallstack(String callstack) |
-| `Error` | [`Error23`](../../doc/models/error-23.md) | Required | - | Error23 getError() | setError(Error23 error) |
+| `Error` | [`ChatMeMessageErrorEnum`](../../doc/models/chat-me-message-error-enum.md) | Required | - | ChatMeMessageErrorEnum getError() | setError(ChatMeMessageErrorEnum error) |
 | `Ok` | `String` | Required, Constant | **Value**: `"False"` | String getOk() | setOk(String ok) |
 | `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
 

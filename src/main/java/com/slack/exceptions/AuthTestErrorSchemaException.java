@@ -8,16 +8,16 @@ package com.slack.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
-import com.slack.models.Error18;
+import com.slack.models.AuthTestErrorEnum;
 import io.apimatic.coreinterfaces.http.Context;
 
 /**
  * This is a model class for AuthTestErrorSchemaException type.
  */
 public class AuthTestErrorSchemaException extends ApiException {
-    private static final long serialVersionUID = 6356948577528391344L;
+    private static final long serialVersionUID = 6357183297922165136L;
     private String callstack;
-    private Error18 error;
+    private AuthTestErrorEnum error;
     private String ok;
 
     /**
@@ -52,19 +52,19 @@ public class AuthTestErrorSchemaException extends ApiException {
 
     /**
      * Getter for Error.
-     * @return Returns the Error18
+     * @return Returns the AuthTestErrorEnum
      */
     @JsonGetter("error")
-    public Error18 getError() {
+    public AuthTestErrorEnum getError() {
         return this.error;
     }
 
     /**
      * Setter for Error.
-     * @param error Value for Error18
+     * @param error Value for AuthTestErrorEnum
      */
     @JsonSetter("error")
-    private void setError(Error18 error) {
+    private void setError(AuthTestErrorEnum error) {
         this.error = error;
     }
 
